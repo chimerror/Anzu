@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Badgerer" product-version="0.0.15067.1000" build-num="15067">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/CountdownString" translate="yes" xml:space="preserve">
+          <source>Take a break. I'll go away in:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DCFCB][!!_Ţáќê à ъŕéãк. Í'ľł ġò àẁáў îй:_!!!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">String displayed on the countdown window.</note>
+          </trans-unit>
+        <trans-unit id="Resx/WindowTitle" translate="yes" xml:space="preserve">
+          <source>Anzu Badgerer</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[14E47][!!_Àиźû Βâďġêřéř_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">String displayed on the window title.</note>
+          </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
