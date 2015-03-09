@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15068.0412" build-num="15068">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15068.0656" build-num="15068">
     <header>
       <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
     </header>
@@ -16,6 +16,31 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[0FCA0][!!_Âήźú Ħóйċђô_!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown as a tooltip for the Honcho Notification Tray Item</note>
           </trans-unit>
+        <trans-unit id="Resx/StartingTimeSpecificTimeText" translate="yes" xml:space="preserve">
+          <source>at a specific time: </source>
+          <target state="new">at a specific time: </target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a specific time.</note>
+        </trans-unit>
+        <trans-unit id="Resx/StartingTimeNowText" translate="yes" xml:space="preserve">
+          <source>now.</source>
+          <target state="new">now.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting now.</note>
+        </trans-unit>
+        <trans-unit id="Resx/StartingTimeAfterTheHourText" translate="yes" xml:space="preserve">
+          <source>after the hour at: </source>
+          <target state="new">after the hour at: </target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a time after the hour.</note>
+        </trans-unit>
+        <trans-unit id="Resx/StartingTimeAfterScreenUnlockText" translate="yes" xml:space="preserve">
+          <source>after the screen is unlocked.</source>
+          <target state="new">after the screen is unlocked.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is unlocked.</note>
+        </trans-unit>
+        <trans-unit id="Resx/StartingTimeAfterScreenLockText" translate="yes" xml:space="preserve">
+          <source>after the screen is locked.</source>
+          <target state="new">after the screen is locked.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is locked.</note>
+        </trans-unit>
       </group>
     </body>
   </file>

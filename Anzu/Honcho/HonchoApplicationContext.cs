@@ -18,6 +18,7 @@ namespace Honcho
         private readonly TaskFolder _taskFolder;
         private readonly IContainer _components;
         private readonly NotifyIcon _notifyIcon;
+        private BreakForm _createForm;
 
         public HonchoApplicationContext(TaskService taskService, TaskFolder taskFolder)
         {
@@ -43,8 +44,8 @@ namespace Honcho
                 Visible = true
             };
 
-            _notifyIcon.MouseUp += NotifyIcon_MouseUp;
-            _notifyIcon.ContextMenuStrip.Opening += ContextMenuStrip_Opening;
+            _notifyIcon.MouseUp += NotifyIcon_OnMouseUp;
+            _notifyIcon.ContextMenuStrip.Opening += ContextMenuStrip_OnOpening;
         }
 
         protected override void Dispose(bool disposing)
@@ -62,7 +63,7 @@ namespace Honcho
             base.ExitThreadCore();
         }
         
-        private void NotifyIcon_MouseUp(object sender, MouseEventArgs e)
+        private void NotifyIcon_OnMouseUp(object sender, MouseEventArgs e)
         {
             // HACK: This will make the menu display on a left click as well as a right
             // click. Using reflection is grody, but it seems to be the easiest way.
@@ -73,7 +74,7 @@ namespace Honcho
             }
         }
 
-        private void ContextMenuStrip_Opening(object sender, CancelEventArgs e)
+        private void ContextMenuStrip_OnOpening(object sender, CancelEventArgs e)
         {
             e.Cancel = false;
 
@@ -92,17 +93,33 @@ namespace Honcho
 
         private void CreateTask_OnClicked(object sender, EventArgs e)
         {
-            var task = _taskService.NewTask();
-            var trigger = new TimeTrigger(DateTime.Now);
-            trigger.Enabled = true;
-            trigger.Repetition.Interval = TimeSpan.FromHours(1);
-            trigger.Repetition.StopAtDurationEnd = false;
-            trigger.ExecutionTimeLimit = TimeSpan.FromMinutes(5);
-            task.Triggers.Add(trigger);
+            //var task = _taskService.NewTask();
+            //var trigger = new TimeTrigger(DateTime.Now);
+            //trigger.Enabled = true;
+            //trigger.Repetition.Interval = TimeSpan.FromHours(1);
+            //trigger.Repetition.StopAtDurationEnd = false;
+            //trigger.ExecutionTimeLimit = TimeSpan.FromMinutes(5);
+            //task.Triggers.Add(trigger);
 
-            task.Actions.Add(new ExecAction("badgerer.exe"));
+            //task.Actions.Add(new ExecAction("badgerer.exe"));
 
-            _taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task);
+            //_taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task);
+
+            if (_createForm == null)
+            {
+                _createForm = new BreakForm();
+                _createForm.FormClosed += CreateForm_OnClosed;
+                _createForm.Show();
+            }
+            else
+            {
+                _createForm.Activate();
+            }
+        }
+
+        private void CreateForm_OnClosed(object sender, EventArgs e)
+        {
+            _createForm = null;
         }
     }
 }

@@ -117,36 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ExitMenuName" xml:space="preserve">
-    <value>E&amp;xit</value>
-    <comment>Shown on the Exit item of the menu.</comment>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="HonchoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\coloredcaptalistpicture.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HonchoToolTip" xml:space="preserve">
-    <value>Anzu Honcho</value>
-    <comment>Shown as a tooltip for the Honcho Notification Tray Item</comment>
-  </data>
-  <data name="StartingTimeAfterScreenLockText" xml:space="preserve">
-    <value>after the screen is locked.</value>
-    <comment>Shown when starting when the screen is locked.</comment>
-  </data>
-  <data name="StartingTimeAfterScreenUnlockText" xml:space="preserve">
-    <value>after the screen is unlocked.</value>
-    <comment>Shown when starting when the screen is unlocked.</comment>
-  </data>
-  <data name="StartingTimeAfterTheHourText" xml:space="preserve">
-    <value>after the hour at: </value>
-    <comment>Shown when starting at a time after the hour.</comment>
-  </data>
-  <data name="StartingTimeNowText" xml:space="preserve">
-    <value>now.</value>
-    <comment>Shown when starting now.</comment>
-  </data>
-  <data name="StartingTimeSpecificTimeText" xml:space="preserve">
-    <value>at a specific time: </value>
-    <comment>Shown when starting at a specific time.</comment>
-  </data>
 </root>

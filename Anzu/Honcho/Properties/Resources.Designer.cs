@@ -87,5 +87,50 @@ namespace Honcho.Properties {
                 return ResourceManager.GetString("HonchoToolTip", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to after the screen is locked..
+        /// </summary>
+        internal static string StartingTimeAfterScreenLockText {
+            get {
+                return ResourceManager.GetString("StartingTimeAfterScreenLockText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to after the screen is unlocked..
+        /// </summary>
+        internal static string StartingTimeAfterScreenUnlockText {
+            get {
+                return ResourceManager.GetString("StartingTimeAfterScreenUnlockText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to after the hour at: .
+        /// </summary>
+        internal static string StartingTimeAfterTheHourText {
+            get {
+                return ResourceManager.GetString("StartingTimeAfterTheHourText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to now..
+        /// </summary>
+        internal static string StartingTimeNowText {
+            get {
+                return ResourceManager.GetString("StartingTimeNowText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to at a specific time: .
+        /// </summary>
+        internal static string StartingTimeSpecificTimeText {
+            get {
+                return ResourceManager.GetString("StartingTimeSpecificTimeText", resourceCulture);
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@
     <AssemblyName>Honcho</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15068.0412</AssemblyVersion>
+    <AssemblyVersion>0.0.15068.0656</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,8 +37,20 @@
     <MultilingualAppToolkitVersion>3.0</MultilingualAppToolkitVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AeroWizard">
+      <HintPath>..\packages\AeroWizard.2.0.6\lib\4\AeroWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="CubicOrange.Windows.Forms.ActiveDirectory">
+      <HintPath>..\packages\TaskSchedulerEditor.2.3.0\lib\4\CubicOrange.Windows.Forms.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="GroupControls">
+      <HintPath>..\packages\GroupControls.1.4.1\lib\4\GroupControls.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Win32.TaskScheduler">
       <HintPath>..\packages\TaskScheduler.2.3.0\lib\4\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskSchedulerEditor">
+      <HintPath>..\packages\TaskSchedulerEditor.2.3.0\lib\4\Microsoft.Win32.TaskSchedulerEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +62,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TimeSpan2">
+      <HintPath>..\packages\TimeSpan2.2.0.4\lib\4\TimeSpan2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BreakForm.cs">
@@ -61,6 +76,16 @@
     <Compile Include="HonchoApplicationContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartingType.cs" />
+    <EmbeddedResource Include="BreakForm.qps-ploc.resx">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BreakForm.qps-ploc.xlf</DependentUpon>
+      <culture>qps-ploc</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BreakForm.resx">
+      <DependentUpon>BreakForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.qps-ploc.resx">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +125,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <XliffResource Include="BreakForm.qps-ploc.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>BreakForm.qps-ploc.resx</LastGenOutput>
+    </XliffResource>
     <XliffResource Include="Properties\Resources.qps-ploc.xlf">
       <Generator>XliffResxGenerator</Generator>
       <LastGenOutput>Resources.qps-ploc.resx</LastGenOutput>
