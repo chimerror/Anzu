@@ -14,6 +14,7 @@ namespace Honcho
         [STAThread]
         static void Main()
         {
+            //System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("qps-ploc");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

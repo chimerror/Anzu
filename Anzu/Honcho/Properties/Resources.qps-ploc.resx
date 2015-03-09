@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ExitMenuName" xml:space="preserve">
-    <value>E&amp;xit</value>
-    <comment>Shown on the Exit item of the menu.</comment>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="HonchoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\coloredcaptalistpicture.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ExitMenuName" xml:space="preserve">
+    <value>[74046][!!_É&amp;хîт_!!]</value>
+    <comment>Shown on the Exit item of the menu.</comment>
+  </data>
   <data name="HonchoToolTip" xml:space="preserve">
-    <value>Anzu Honcho</value>
+    <value>[0FCA0][!!_Âήźú Ħóйċђô_!!]</value>
     <comment>Shown as a tooltip for the Honcho Notification Tray Item</comment>
   </data>
 </root>
