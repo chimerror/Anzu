@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Badgerer
 {
-    public partial class Form1 : Form
+    public partial class BadgererForm : Form
     {
         private readonly TimeSpan _countdownInterval;
         private readonly Timer _closeTimer = new Timer();
         private readonly Timer _updateTimer = new Timer();
         private readonly DateTime _startTime; 
 
-        public Form1(int countdownIntervalInMs)
+        public BadgererForm(int countdownIntervalInMs)
         {
             if (countdownIntervalInMs < 0)
             {

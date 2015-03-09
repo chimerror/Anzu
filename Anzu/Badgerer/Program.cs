@@ -24,7 +24,7 @@ namespace Badgerer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var form = new Form1(options.DisplayTimeInMs);
+            var form = new BadgererForm(options.DisplayTimeInMs);
 
             if (options.ShowAsNormalWindow || options.DontMaximize)
             {

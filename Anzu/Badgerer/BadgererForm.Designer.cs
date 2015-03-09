@@ -1,6 +1,6 @@
 ﻿namespace Badgerer
 {
-    partial class Form1
+    partial class BadgererForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BadgererForm));
             this._countdownLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 

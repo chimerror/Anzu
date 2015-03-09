@@ -11,7 +11,7 @@
     <AssemblyName>Badgerer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15067.1000</AssemblyVersion>
+    <AssemblyVersion>0.0.15068.0052</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -71,24 +71,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="BadgererForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BadgererForm.Designer.cs">
+      <DependentUpon>BadgererForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Options.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Form1.qps-ploc.resx">
+    <EmbeddedResource Include="BadgererForm.resx">
+      <DependentUpon>BadgererForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BadgererForm.qps-ploc.resx">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Form1.qps-ploc.xlf</DependentUpon>
+      <DependentUpon>BadgererForm.qps-ploc.xlf</DependentUpon>
       <culture>qps-ploc</culture>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.qps-ploc.resx">
       <AutoGen>True</AutoGen>
@@ -121,10 +121,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <XliffResource Include="Form1.qps-ploc.xlf">
+    <XliffResource Include="BadgererForm.qps-ploc.xlf">
       <Generator>XliffResxGenerator</Generator>
-      <LastGenOutput>Form1.qps-ploc.resx</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>BadgererForm.qps-ploc1.resx</LastGenOutput>
     </XliffResource>
     <XliffResource Include="Properties\Resources.qps-ploc.xlf">
       <Generator>XliffResxGenerator</Generator>
