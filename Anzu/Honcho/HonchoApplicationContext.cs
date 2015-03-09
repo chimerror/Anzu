@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.TaskScheduler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -13,11 +14,26 @@ namespace Honcho
 
     internal class HonchoApplicationContext : ApplicationContext
     {
+        private readonly TaskService _taskService;
+        private readonly TaskFolder _taskFolder;
         private readonly IContainer _components;
         private readonly NotifyIcon _notifyIcon;
 
-        public HonchoApplicationContext()
+        public HonchoApplicationContext(TaskService taskService, TaskFolder taskFolder)
         {
+            if (taskService == null)
+            {
+                throw new ArgumentNullException("taskService");
+            }
+            
+            if (taskFolder == null)
+            {
+                throw new ArgumentNullException("taskFolder");
+            }
+
+            _taskService = taskService;
+            _taskFolder = taskFolder;
+
             _components = new Container();
             _notifyIcon = new NotifyIcon(_components)
             {
@@ -62,6 +78,9 @@ namespace Honcho
             e.Cancel = false;
 
             _notifyIcon.ContextMenuStrip.Items.Clear();
+
+            _notifyIcon.ContextMenuStrip.Items.Add("&Create Task", null, CreateTask_OnClicked);
+            _notifyIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
             var exitMenuItem = new ToolStripMenuItem(Properties.Resources.ExitMenuName, null, Exit_OnClicked);
             _notifyIcon.ContextMenuStrip.Items.Add(exitMenuItem);
         }
@@ -69,6 +88,21 @@ namespace Honcho
         private void Exit_OnClicked(object sender, EventArgs e)
         {
             ExitThread();
+        }
+
+        private void CreateTask_OnClicked(object sender, EventArgs e)
+        {
+            var task = _taskService.NewTask();
+            var trigger = new TimeTrigger(DateTime.Now);
+            trigger.Enabled = true;
+            trigger.Repetition.Interval = TimeSpan.FromHours(1);
+            trigger.Repetition.StopAtDurationEnd = false;
+            trigger.ExecutionTimeLimit = TimeSpan.FromMinutes(5);
+            task.Triggers.Add(trigger);
+
+            task.Actions.Add(new ExecAction("badgerer.exe"));
+
+            _taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task);
         }
     }
 }

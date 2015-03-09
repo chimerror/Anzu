@@ -11,7 +11,7 @@
     <AssemblyName>Honcho</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15068.0245</AssemblyVersion>
+    <AssemblyVersion>0.0.15068.0412</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,6 +37,9 @@
     <MultilingualAppToolkitVersion>3.0</MultilingualAppToolkitVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Win32.TaskScheduler">
+      <HintPath>..\packages\TaskScheduler.2.3.0\lib\4\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BreakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BreakForm.Designer.cs">
+      <DependentUpon>BreakForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HonchoApplicationContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +77,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
