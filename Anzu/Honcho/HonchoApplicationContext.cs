@@ -80,7 +80,7 @@ namespace Honcho
 
             _notifyIcon.ContextMenuStrip.Items.Clear();
 
-            _notifyIcon.ContextMenuStrip.Items.Add("&Create Task", null, CreateTask_OnClicked);
+            _notifyIcon.ContextMenuStrip.Items.Add(Properties.Resources.ScheduleNewBreakMenuName, null, CreateTask_OnClicked);
             _notifyIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
             var exitMenuItem = new ToolStripMenuItem(Properties.Resources.ExitMenuName, null, Exit_OnClicked);
             _notifyIcon.ContextMenuStrip.Items.Add(exitMenuItem);

@@ -1,11 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15068.0656" build-num="15068">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15075.0557" build-num="15075">
     <header>
       <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
     </header>
     <body>
       <group id="Resx">
+        <trans-unit id="Resx/BreakDurationLabelText" translate="yes" xml:space="preserve">
+          <source>Take a break for</source>
+          <target state="translated" state-qualifier="mt-suggestion">[28338][!!_Τâķé â вŗęãќ ƒõѓ_!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break duration drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakRepeatLabelText" translate="yes" xml:space="preserve">
+          <source>repeat break(s)</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[28ADE][!!_ŗêþêãţ вřéàĸ(š)_!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break repeat type drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakIntervalLabelText" translate="yes" xml:space="preserve">
+          <source>every</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[25857][!!_èνêŗў_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break interval drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakScheduleDailyText" translate="yes" xml:space="preserve">
+          <source>daily.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D69BD][!!_đãìļў._!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling daily.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakScheduleOnCertainDaysOfTheWeekText" translate="yes" xml:space="preserve">
+          <source>on certain days of the week:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[F8136][!!_òή ċéřťãìη đàўŝ õƒ τħé ŵéêĸ:_!!!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling on certain days of the week.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakStartLabelText" translate="yes" xml:space="preserve">
+          <source>starting</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[38A8B][!!_šťâŕţîиġ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break starting time drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakScheduleIndefinitelyText" translate="yes" xml:space="preserve">
+          <source>indefinitely.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[0B9A5][!!_ìиďéƒįиìťêĺŷ._!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling indefinitely</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakScheduleLabelText" translate="yes" xml:space="preserve">
+          <source>schedule breaks(s)</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DCC32][!!_ŝĉђęđúľé ъřéáкš(ś)_!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break schedule type drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakScheduleEveryNumberOfDaysText" translate="yes" xml:space="preserve">
+          <source>every number of days:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[3748B][!!_èνęŗý ηúmьêѓ õƒ đãýş:_!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling every number of days.</note>
+          </trans-unit>
         <trans-unit id="Resx/ExitMenuName" translate="yes" xml:space="preserve">
           <source>E%%amp;xit</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[74046][!!_É%%amp;хîт_!!]</target>
@@ -16,31 +61,62 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[0FCA0][!!_Âήźú Ħóйċђô_!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown as a tooltip for the Honcho Notification Tray Item</note>
           </trans-unit>
+        <trans-unit id="Resx/RepeatAmountUntilSpecificTimeText" translate="yes" xml:space="preserve">
+          <source>until a specific time: </source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[5F46C][!!_ûηтìļ â šþęčìƒíč ţíмę: _!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating until a specific time.</note>
+          </trans-unit>
+        <trans-unit id="Resx/ScheduleNewBreakMenuName" translate="yes" xml:space="preserve">
+          <source>Schedule %%amp;new break...</source>
+          <target state="needs-review-translation">[2F77F][!!_Sčђèðµĺê %%amp;nèŵ ьѓéãк..._!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the Schedule new break item of the menu.</note>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          </trans-unit>
+        <trans-unit id="Resx/RepeatAmountUntilCertainDurationText" translate="yes" xml:space="preserve">
+          <source>for a certain duration:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[8BDB3][!!_ƒóŗ â ĉęѓťàįи ďúŕáťîôη:_!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating for a certain duration.</note>
+          </trans-unit>
+        <trans-unit id="Resx/RepeatAmountOnceText" translate="yes" xml:space="preserve">
+          <source>not at all.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D092C][!!_иóť âţ àłļ._!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating once.</note>
+          </trans-unit>
+        <trans-unit id="Resx/RepeatAmountIndefinitelyText" translate="yes" xml:space="preserve">
+          <source>indefinitely.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[E43B9][!!_įиđèƒîήîţęłÿ._!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating indefinitely.</note>
+          </trans-unit>
+        <trans-unit id="Resx/RepeatAmountCertainNumberOfTimesText" translate="yes" xml:space="preserve">
+          <source>for a certain number of times:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[597CC][!!_ƒõř ã ćèŗтàîй йúмъèѓ õƒ тîmęŝ:_!!!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating for a certain number of times.</note>
+          </trans-unit>
         <trans-unit id="Resx/StartingTimeSpecificTimeText" translate="yes" xml:space="preserve">
           <source>at a specific time: </source>
-          <target state="new">at a specific time: </target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[FD951][!!_âτ â śрęćíƒìč ťìмê: _!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a specific time.</note>
-        </trans-unit>
+          </trans-unit>
         <trans-unit id="Resx/StartingTimeNowText" translate="yes" xml:space="preserve">
           <source>now.</source>
-          <target state="new">now.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[F5A9B][!!_ηôẃ._!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting now.</note>
-        </trans-unit>
+          </trans-unit>
         <trans-unit id="Resx/StartingTimeAfterTheHourText" translate="yes" xml:space="preserve">
           <source>after the hour at: </source>
-          <target state="new">after the hour at: </target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[5A0F5][!!_áƒţéѓ ťħè ĥôµř áт: _!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a time after the hour.</note>
-        </trans-unit>
+          </trans-unit>
         <trans-unit id="Resx/StartingTimeAfterScreenUnlockText" translate="yes" xml:space="preserve">
           <source>after the screen is unlocked.</source>
-          <target state="new">after the screen is unlocked.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[61121][!!_àƒτèř ťнę şćŗęèη íş úиľòĉќêď._!!!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is unlocked.</note>
-        </trans-unit>
+          </trans-unit>
         <trans-unit id="Resx/StartingTimeAfterScreenLockText" translate="yes" xml:space="preserve">
           <source>after the screen is locked.</source>
-          <target state="new">after the screen is locked.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[C78AF][!!_âƒťęř τнé şċŕèęή įś ľôčĸèð._!!!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is locked.</note>
-        </trans-unit>
+          </trans-unit>
       </group>
     </body>
   </file>

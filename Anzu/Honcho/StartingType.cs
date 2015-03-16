@@ -11,8 +11,6 @@ namespace Honcho
     {
         SpecificTime,
         AfterTheHour,
-        AfterScreenLock,
-        AfterScreenUnlock,
         Now,
     }
 
@@ -28,12 +26,6 @@ namespace Honcho
                 case StartingType.AfterTheHour:
                     return Properties.Resources.StartingTimeAfterTheHourText;
                 
-                case StartingType.AfterScreenLock:
-                    return Properties.Resources.StartingTimeAfterScreenLockText;
-
-                case StartingType.AfterScreenUnlock:
-                    return Properties.Resources.StartingTimeAfterScreenUnlockText;
-
                 case StartingType.Now:
                     return Properties.Resources.StartingTimeNowText;
 
