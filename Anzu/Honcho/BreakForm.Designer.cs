@@ -56,10 +56,21 @@
             this._breakUntilDropDown = new System.Windows.Forms.ComboBox();
             this._breakUntilSpecificTimePicker = new System.Windows.Forms.DateTimePicker();
             this._breakUntilSpecificDurationPicker = new System.Windows.Forms.TimeSpanPicker();
+            this._badgererOptionsGroupBox = new System.Windows.Forms.GroupBox();
+            this._badgererOptionsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this._lockScreenCheckBox = new System.Windows.Forms.CheckBox();
+            this._badgererDisplayLabel = new System.Windows.Forms.Label();
+            this._badgererDisplayDropDown = new System.Windows.Forms.ComboBox();
+            this._buttonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._okButton = new System.Windows.Forms.Button();
+            this._cancelButton = new System.Windows.Forms.Button();
             this._flowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).BeginInit();
+            this._badgererOptionsGroupBox.SuspendLayout();
+            this._badgererOptionsFlowLayoutPanel.SuspendLayout();
+            this._buttonsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // _flowLayoutPanel
@@ -454,20 +465,118 @@
             this._breakUntilSpecificDurationPicker.Value = new System.TimeSpan2(7, 0, 0, 0);
             this._breakUntilSpecificDurationPicker.Visible = false;
             // 
+            // _badgererOptionsGroupBox
+            // 
+            this._badgererOptionsGroupBox.AutoSize = true;
+            this._badgererOptionsGroupBox.Controls.Add(this._badgererOptionsFlowLayoutPanel);
+            this._badgererOptionsGroupBox.Location = new System.Drawing.Point(0, 297);
+            this._badgererOptionsGroupBox.Name = "_badgererOptionsGroupBox";
+            this._badgererOptionsGroupBox.Size = new System.Drawing.Size(516, 65);
+            this._badgererOptionsGroupBox.TabIndex = 1;
+            this._badgererOptionsGroupBox.TabStop = false;
+            this._badgererOptionsGroupBox.Text = "When taking a break:";
+            // 
+            // _badgererOptionsFlowLayoutPanel
+            // 
+            this._badgererOptionsFlowLayoutPanel.AutoSize = true;
+            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._lockScreenCheckBox);
+            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._badgererDisplayLabel);
+            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._badgererDisplayDropDown);
+            this._badgererOptionsFlowLayoutPanel.Location = new System.Drawing.Point(12, 19);
+            this._badgererOptionsFlowLayoutPanel.Name = "_badgererOptionsFlowLayoutPanel";
+            this._badgererOptionsFlowLayoutPanel.Size = new System.Drawing.Size(498, 27);
+            this._badgererOptionsFlowLayoutPanel.TabIndex = 0;
+            // 
+            // _lockScreenCheckBox
+            // 
+            this._lockScreenCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this._lockScreenCheckBox.AutoSize = true;
+            this._lockScreenCheckBox.Checked = true;
+            this._lockScreenCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._lockScreenCheckBox.Location = new System.Drawing.Point(3, 5);
+            this._lockScreenCheckBox.Name = "_lockScreenCheckBox";
+            this._lockScreenCheckBox.Size = new System.Drawing.Size(103, 17);
+            this._lockScreenCheckBox.TabIndex = 0;
+            this._lockScreenCheckBox.Text = "Lock the screen";
+            this._lockScreenCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // _badgererDisplayLabel
+            // 
+            this._badgererDisplayLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this._badgererDisplayLabel.AutoSize = true;
+            this._badgererDisplayLabel.Location = new System.Drawing.Point(112, 7);
+            this._badgererDisplayLabel.Name = "_badgererDisplayLabel";
+            this._badgererDisplayLabel.Size = new System.Drawing.Size(146, 13);
+            this._badgererDisplayLabel.TabIndex = 15;
+            this._badgererDisplayLabel.Text = "Display Badgerer window as: ";
+            this._badgererDisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // _badgererDisplayDropDown
+            // 
+            this._badgererDisplayDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._badgererDisplayDropDown.FormattingEnabled = true;
+            this._badgererDisplayDropDown.Location = new System.Drawing.Point(264, 3);
+            this._badgererDisplayDropDown.Name = "_badgererDisplayDropDown";
+            this._badgererDisplayDropDown.Size = new System.Drawing.Size(121, 21);
+            this._badgererDisplayDropDown.TabIndex = 16;
+            // 
+            // _buttonsTableLayoutPanel
+            // 
+            this._buttonsTableLayoutPanel.AutoSize = true;
+            this._buttonsTableLayoutPanel.ColumnCount = 2;
+            this._buttonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._buttonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._buttonsTableLayoutPanel.Controls.Add(this._okButton, 0, 0);
+            this._buttonsTableLayoutPanel.Controls.Add(this._cancelButton, 1, 0);
+            this._buttonsTableLayoutPanel.Location = new System.Drawing.Point(0, 368);
+            this._buttonsTableLayoutPanel.Name = "_buttonsTableLayoutPanel";
+            this._buttonsTableLayoutPanel.RowCount = 1;
+            this._buttonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._buttonsTableLayoutPanel.Size = new System.Drawing.Size(510, 29);
+            this._buttonsTableLayoutPanel.TabIndex = 3;
+            // 
+            // _okButton
+            // 
+            this._okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._okButton.Location = new System.Drawing.Point(177, 3);
+            this._okButton.Name = "_okButton";
+            this._okButton.Size = new System.Drawing.Size(75, 23);
+            this._okButton.TabIndex = 0;
+            this._okButton.Text = "OK";
+            this._okButton.UseVisualStyleBackColor = true;
+            // 
+            // _cancelButton
+            // 
+            this._cancelButton.Location = new System.Drawing.Point(258, 3);
+            this._cancelButton.Name = "_cancelButton";
+            this._cancelButton.Size = new System.Drawing.Size(75, 23);
+            this._cancelButton.TabIndex = 1;
+            this._cancelButton.Text = "Cancel";
+            this._cancelButton.UseVisualStyleBackColor = true;
+            // 
             // BreakForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(547, 291);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(520, 401);
             this.Controls.Add(this._flowLayoutPanel);
+            this.Controls.Add(this._badgererOptionsGroupBox);
+            this.Controls.Add(this._buttonsTableLayoutPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "BreakForm";
-            this.Text = "BreakForm";
+            this.Text = "Schedule New Break";
             this._flowLayoutPanel.ResumeLayout(false);
             this._flowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).EndInit();
+            this._badgererOptionsGroupBox.ResumeLayout(false);
+            this._badgererOptionsGroupBox.PerformLayout();
+            this._badgererOptionsFlowLayoutPanel.ResumeLayout(false);
+            this._badgererOptionsFlowLayoutPanel.PerformLayout();
+            this._buttonsTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,5 +612,13 @@
         private System.Windows.Forms.ComboBox _breakUntilDropDown;
         private System.Windows.Forms.DateTimePicker _breakUntilSpecificTimePicker;
         private System.Windows.Forms.TimeSpanPicker _breakUntilSpecificDurationPicker;
+        private System.Windows.Forms.GroupBox _badgererOptionsGroupBox;
+        private System.Windows.Forms.FlowLayoutPanel _badgererOptionsFlowLayoutPanel;
+        private System.Windows.Forms.CheckBox _lockScreenCheckBox;
+        private System.Windows.Forms.Label _badgererDisplayLabel;
+        private System.Windows.Forms.ComboBox _badgererDisplayDropDown;
+        private System.Windows.Forms.TableLayoutPanel _buttonsTableLayoutPanel;
+        private System.Windows.Forms.Button _okButton;
+        private System.Windows.Forms.Button _cancelButton;
     }
 }
