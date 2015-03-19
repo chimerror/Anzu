@@ -88,7 +88,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to daily..
+        ///   Looks up a localized string similar to daily:.
         /// </summary>
         internal static string BreakScheduleDailyText {
             get {
@@ -138,6 +138,42 @@ namespace Honcho.Properties {
         internal static string BreakStartLabelText {
             get {
                 return ResourceManager.GetString("BreakStartLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to the end of time..
+        /// </summary>
+        internal static string BreakUntilIndefinitelyText {
+            get {
+                return ResourceManager.GetString("BreakUntilIndefinitelyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to until.
+        /// </summary>
+        internal static string BreakUntilLabelText {
+            get {
+                return ResourceManager.GetString("BreakUntilLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a specific duration has passed:.
+        /// </summary>
+        internal static string BreakUntilSpecificDurationText {
+            get {
+                return ResourceManager.GetString("BreakUntilSpecificDurationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to a specific time:.
+        /// </summary>
+        internal static string BreakUntilSpecificTimeText {
+            get {
+                return ResourceManager.GetString("BreakUntilSpecificTimeText", resourceCulture);
             }
         }
         
@@ -215,7 +251,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &amp;Schedule new break....
+        ///   Looks up a localized string similar to Schedule &amp;new break....
         /// </summary>
         internal static string ScheduleNewBreakMenuName {
             get {
@@ -260,7 +296,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to at a specific time: .
+        ///   Looks up a localized string similar to at a specific time:.
         /// </summary>
         internal static string StartingTimeSpecificTimeText {
             get {

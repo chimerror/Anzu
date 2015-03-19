@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Honcho
             CultureInfo.CurrentUICulture.DateTimeFormat.ShortTimePattern;
         private DateTime _lastSpecificStartDateTime = DateTime.MinValue;
         private DateTime _lastSpecificEndDateTime = DateTime.MinValue;
+        private DateTime _lastSpecificUntilDateTime = DateTime.MinValue;
 
         public BreakForm()
         {
@@ -29,13 +31,15 @@ namespace Honcho
         {
             base.OnLoad(e);
 
+            Debug.Assert(Controls.Count == Controls.OfType<Control>().Count(), "Not everything is a control!");
+
             _breakDurationLabel.Text = Properties.Resources.BreakDurationLabelText;
             _breakIntervalLabel.Text = Properties.Resources.BreakIntervalLabelText;
             _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
             _breakRepeatLabel.Text = Properties.Resources.BreakRepeatLabelText;
             _breakScheduleLabel.Text = Properties.Resources.BreakScheduleLabelText;
+            _breakScheduleUntilLabel.Text = Properties.Resources.BreakUntilLabelText;
 
-            _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
             _startingTypeDropDown.SetComboBoxToEnum<StartingType>(st => st.GetFriendlyName(), StartingTypeDropDown_SelectedValueChanged);
 
             _startingSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
@@ -55,20 +59,24 @@ namespace Honcho
             _checkBoxThursday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Thursday);
             _checkBoxFriday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Friday);
             _checkBoxSaturday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Saturday);
+
+            _breakUntilDropDown.SetComboBoxToEnum<UntilType>(ut => ut.GetFriendlyName(), UntilDropDown_SelectedValueChanged);
+
+            _breakUntilSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
+            _breakUntilSpecificTimePicker.ValueChanged += BreakUntilSpecificTimePicker_ValueChanged;
         }
 
         private void StartingTypeDropDown_SelectedValueChanged(object sender, EventArgs e)
         {
+            _startingTimeAfterHourPicker.HideAndDisable();
+            _startingSpecificTimePicker.HideAndDisable();
+            _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, false);
+
             var currentValue = (StartingType)_startingTypeDropDown.SelectedValue;
             switch (currentValue)
             {
                 case StartingType.SpecificTime:
-                    _startingTimeAfterHourPicker.Enabled = false;
-                    _startingTimeAfterHourPicker.Visible = false;
-                    _startingSpecificTimePicker.Enabled = true;
-                    _startingSpecificTimePicker.Visible = true;
-                    _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, false);
-
+                    _startingSpecificTimePicker.ShowAndEnable();
                     _startingSpecificTimePicker.Value = 
                         _lastSpecificStartDateTime.Equals(DateTime.MinValue) ?
                         DateTime.Now :
@@ -76,18 +84,10 @@ namespace Honcho
                     break;
 
                 case StartingType.AfterTheHour:
-                    _startingSpecificTimePicker.Enabled = false;
-                    _startingSpecificTimePicker.Visible = false;
-                    _startingTimeAfterHourPicker.Enabled = true;
-                    _startingTimeAfterHourPicker.Visible = true;
-                    _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, false);
+                    _startingTimeAfterHourPicker.ShowAndEnable();
                     break;
 
                 default:
-                    _startingTimeAfterHourPicker.Enabled = false;
-                    _startingTimeAfterHourPicker.Visible = false;
-                    _startingSpecificTimePicker.Enabled = false;
-                    _startingSpecificTimePicker.Visible = false;
                     _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, true);
                     break;
             }
@@ -95,18 +95,16 @@ namespace Honcho
 
         private void RepeatTypeDropDown_SelectedValueChanged(object sender, EventArgs e)
         {
+            _repeatSpecificTimePicker.HideAndDisable();
+            _repeatCertainDurationPicker.HideAndDisable();
+            _repeatSpecificNumberOfTimesPicker.HideAndDisable();
+            _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, false);
+
             var currentValue = (RepeatType)_repeatDurationDropDown.SelectedValue;
             switch (currentValue)
             {
                 case RepeatType.UntilSpecificTime:
-                    _repeatSpecificTimePicker.Enabled = true;
-                    _repeatSpecificTimePicker.Visible = true;
-                    _repeatCertainDurationPicker.Enabled = false;
-                    _repeatCertainDurationPicker.Visible = false;
-                    _repeatSpecificNumberOfTimesPicker.Enabled = false;
-                    _repeatSpecificNumberOfTimesPicker.Visible = false;
-                    _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, false);
-
+                    _repeatSpecificTimePicker.ShowAndEnable();
                     _repeatSpecificTimePicker.Value =
                         _lastSpecificEndDateTime.Equals(DateTime.MinValue) ?
                         DateTime.Now :
@@ -114,32 +112,14 @@ namespace Honcho
                     break;
 
                 case RepeatType.UntilCertainDuration:
-                    _repeatSpecificTimePicker.Enabled = false;
-                    _repeatSpecificTimePicker.Visible = false;
-                    _repeatCertainDurationPicker.Enabled = true;
-                    _repeatCertainDurationPicker.Visible = true;
-                    _repeatSpecificNumberOfTimesPicker.Enabled = false;
-                    _repeatSpecificNumberOfTimesPicker.Visible = false;
-                    _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, false);
+                    _repeatCertainDurationPicker.ShowAndEnable();
                     break;
 
                 case RepeatType.CertainNumberOfTimes:
-                    _repeatSpecificTimePicker.Enabled = false;
-                    _repeatSpecificTimePicker.Visible = false;
-                    _repeatCertainDurationPicker.Enabled = false;
-                    _repeatCertainDurationPicker.Visible = false;
-                    _repeatSpecificNumberOfTimesPicker.Enabled = true;
-                    _repeatSpecificNumberOfTimesPicker.Visible = true;
-                    _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, false);
+                    _repeatSpecificNumberOfTimesPicker.ShowAndEnable();
                     break;
 
                 default:
-                    _repeatSpecificTimePicker.Enabled = false;
-                    _repeatSpecificTimePicker.Visible = false;
-                    _repeatCertainDurationPicker.Enabled = false;
-                    _repeatCertainDurationPicker.Visible = false;
-                    _repeatSpecificNumberOfTimesPicker.Enabled = false;
-                    _repeatSpecificNumberOfTimesPicker.Visible = false;
                     _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, true);
                     break;
             }
@@ -147,69 +127,89 @@ namespace Honcho
 
         private void ScheduleTypeDropDown_SelectedValueChanged(object sender, EventArgs e)
         {
+            HideUntilSection();
+            _everyNumberOfDaysPicker.HideAndDisable();
+            _checkBoxSunday.HideAndDisable();
+            _checkBoxMonday.HideAndDisable();
+            _checkBoxTuesday.HideAndDisable();
+            _checkBoxWednesday.HideAndDisable();
+            _checkBoxThursday.HideAndDisable();
+            _checkBoxFriday.HideAndDisable();
+            _checkBoxSaturday.HideAndDisable();
+            _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, true);
+
             var currentType = (ScheduleType)_breakScheduleDropDown.SelectedValue;
             switch (currentType)
             {
                 case ScheduleType.EveryNumberOfDays:
-                    _everyNumberOfDaysPicker.Enabled = true;
-                    _everyNumberOfDaysPicker.Visible = true;
-                    _checkBoxSunday.Enabled = false;
-                    _checkBoxMonday.Enabled = false;
-                    _checkBoxTuesday.Enabled = false;
-                    _checkBoxWednesday.Enabled = false;
-                    _checkBoxThursday.Enabled = false;
-                    _checkBoxFriday.Enabled = false;
-                    _checkBoxSaturday.Enabled = false;
-                    _checkBoxSunday.Visible = false;
-                    _checkBoxMonday.Visible = false;
-                    _checkBoxTuesday.Visible = false;
-                    _checkBoxWednesday.Visible = false;
-                    _checkBoxThursday.Visible = false;
-                    _checkBoxFriday.Visible = false;
-                    _checkBoxSaturday.Visible = false;
+                    _everyNumberOfDaysPicker.ShowAndEnable();
                     _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, false);
                     break;
                 
                 case ScheduleType.OnCertainDaysOfTheWeek:
-                    _everyNumberOfDaysPicker.Enabled = false;
-                    _everyNumberOfDaysPicker.Visible = false;
-                    _checkBoxSunday.Enabled = true;
-                    _checkBoxMonday.Enabled = true;
-                    _checkBoxTuesday.Enabled = true;
-                    _checkBoxWednesday.Enabled = true;
-                    _checkBoxThursday.Enabled = true;
-                    _checkBoxFriday.Enabled = true;
-                    _checkBoxSaturday.Enabled = true;
-                    _checkBoxSunday.Visible = true;
-                    _checkBoxMonday.Visible = true;
-                    _checkBoxTuesday.Visible = true;
-                    _checkBoxWednesday.Visible = true;
-                    _checkBoxThursday.Visible = true;
-                    _checkBoxFriday.Visible = true;
-                    _checkBoxSaturday.Visible = true;
-                    _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, true);
+                    _checkBoxSunday.ShowAndEnable();
+                    _checkBoxMonday.ShowAndEnable();
+                    _checkBoxTuesday.ShowAndEnable();
+                    _checkBoxWednesday.ShowAndEnable();
+                    _checkBoxThursday.ShowAndEnable();
+                    _checkBoxFriday.ShowAndEnable();
+                    _checkBoxSaturday.ShowAndEnable();
+                    break;
+            }
+
+            // Until section should be shown and enabled after other controls so it
+            // appears at the end.
+            if (currentType != ScheduleType.Indefinitely)
+            {
+                ShowUntilSection();
+            }
+        }
+
+        private void UntilDropDown_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Only update the section if it's already visible.
+            if (_breakUntilDropDown.Visible)
+            {
+                ShowUntilSection();
+            }
+        }
+
+        private void ShowUntilSection()
+        {
+            _breakScheduleUntilLabel.ShowAndEnable();
+            _breakUntilDropDown.ShowAndEnable();
+
+            _breakUntilSpecificTimePicker.HideAndDisable();
+            _breakUntilSpecificDurationPicker.HideAndDisable();
+            _flowLayoutPanel.SetFlowBreak(_breakUntilDropDown, false);
+
+            var currentType = (UntilType)_breakUntilDropDown.SelectedValue;
+            switch (currentType)
+            {
+                case UntilType.SpecificTime:
+                    _breakUntilSpecificTimePicker.ShowAndEnable();
+                    _breakUntilSpecificTimePicker.Value = 
+                        _lastSpecificUntilDateTime.Equals(DateTime.MinValue) ?
+                        DateTime.Now :
+                        _lastSpecificUntilDateTime;
+                    break;
+
+                case UntilType.SpecificDuration:
+                    _breakUntilSpecificDurationPicker.ShowAndEnable();
                     break;
 
                 default:
-                    _everyNumberOfDaysPicker.Enabled = false;
-                    _everyNumberOfDaysPicker.Visible = false;
-                    _checkBoxSunday.Enabled = false;
-                    _checkBoxMonday.Enabled = false;
-                    _checkBoxTuesday.Enabled = false;
-                    _checkBoxWednesday.Enabled = false;
-                    _checkBoxThursday.Enabled = false;
-                    _checkBoxFriday.Enabled = false;
-                    _checkBoxSaturday.Enabled = false;
-                    _checkBoxSunday.Visible = false;
-                    _checkBoxMonday.Visible = false;
-                    _checkBoxTuesday.Visible = false;
-                    _checkBoxWednesday.Visible = false;
-                    _checkBoxThursday.Visible = false;
-                    _checkBoxFriday.Visible = false;
-                    _checkBoxSaturday.Visible = false;
-                    _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, true);
+                    _flowLayoutPanel.SetFlowBreak(_breakUntilDropDown, true);
                     break;
             }
+        }
+
+        private void HideUntilSection()
+        {
+            _breakScheduleUntilLabel.HideAndDisable();
+            _breakUntilDropDown.HideAndDisable();
+            _breakUntilSpecificTimePicker.HideAndDisable();
+            _breakUntilSpecificDurationPicker.HideAndDisable();
         }
         
         private void StartingSpecificTimePicker_ValueChanged(object sender, EventArgs e)
@@ -220,6 +220,11 @@ namespace Honcho
         private void RepeatSpecificTimePicker_ValueChanged(object sender, EventArgs e)
         {
             _lastSpecificEndDateTime = _repeatSpecificTimePicker.Value;
+        }
+
+        private void BreakUntilSpecificTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            _lastSpecificUntilDateTime = _breakUntilSpecificTimePicker.Value;
         }
     }
 }

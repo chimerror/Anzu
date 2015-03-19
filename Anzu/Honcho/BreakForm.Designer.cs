@@ -52,6 +52,10 @@
             this._checkBoxThursday = new System.Windows.Forms.CheckBox();
             this._checkBoxFriday = new System.Windows.Forms.CheckBox();
             this._checkBoxSaturday = new System.Windows.Forms.CheckBox();
+            this._breakScheduleUntilLabel = new System.Windows.Forms.Label();
+            this._breakUntilDropDown = new System.Windows.Forms.ComboBox();
+            this._breakUntilSpecificTimePicker = new System.Windows.Forms.DateTimePicker();
+            this._breakUntilSpecificDurationPicker = new System.Windows.Forms.TimeSpanPicker();
             this._flowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).BeginInit();
@@ -84,9 +88,13 @@
             this._flowLayoutPanel.Controls.Add(this._checkBoxThursday);
             this._flowLayoutPanel.Controls.Add(this._checkBoxFriday);
             this._flowLayoutPanel.Controls.Add(this._checkBoxSaturday);
+            this._flowLayoutPanel.Controls.Add(this._breakScheduleUntilLabel);
+            this._flowLayoutPanel.Controls.Add(this._breakUntilDropDown);
+            this._flowLayoutPanel.Controls.Add(this._breakUntilSpecificTimePicker);
+            this._flowLayoutPanel.Controls.Add(this._breakUntilSpecificDurationPicker);
             this._flowLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this._flowLayoutPanel.Name = "_flowLayoutPanel";
-            this._flowLayoutPanel.Size = new System.Drawing.Size(476, 267);
+            this._flowLayoutPanel.Size = new System.Drawing.Size(510, 291);
             this._flowLayoutPanel.TabIndex = 0;
             // 
             // _breakDurationLabel
@@ -310,7 +318,7 @@
             0});
             this._everyNumberOfDaysPicker.Visible = false;
             // 
-            // __checkBoxSunday
+            // _checkBoxSunday
             // 
             this._checkBoxSunday.AutoSize = true;
             this._checkBoxSunday.Enabled = false;
@@ -328,7 +336,7 @@
             this._checkBoxMonday.Enabled = false;
             this._checkBoxMonday.Location = new System.Drawing.Point(71, 217);
             this._checkBoxMonday.Name = "_checkBoxMonday";
-            this._checkBoxMonday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxMonday.Size = new System.Drawing.Size(64, 17);
             this._checkBoxMonday.TabIndex = 18;
             this._checkBoxMonday.Text = "Monday";
             this._checkBoxMonday.UseVisualStyleBackColor = true;
@@ -338,9 +346,9 @@
             // 
             this._checkBoxTuesday.AutoSize = true;
             this._checkBoxTuesday.Enabled = false;
-            this._checkBoxTuesday.Location = new System.Drawing.Point(139, 217);
+            this._checkBoxTuesday.Location = new System.Drawing.Point(141, 217);
             this._checkBoxTuesday.Name = "_checkBoxTuesday";
-            this._checkBoxTuesday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxTuesday.Size = new System.Drawing.Size(67, 17);
             this._checkBoxTuesday.TabIndex = 19;
             this._checkBoxTuesday.Text = "Tuesday";
             this._checkBoxTuesday.UseVisualStyleBackColor = true;
@@ -350,9 +358,9 @@
             // 
             this._checkBoxWednesday.AutoSize = true;
             this._checkBoxWednesday.Enabled = false;
-            this._checkBoxWednesday.Location = new System.Drawing.Point(207, 217);
+            this._checkBoxWednesday.Location = new System.Drawing.Point(214, 217);
             this._checkBoxWednesday.Name = "_checkBoxWednesday";
-            this._checkBoxWednesday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxWednesday.Size = new System.Drawing.Size(83, 17);
             this._checkBoxWednesday.TabIndex = 20;
             this._checkBoxWednesday.Text = "Wednesday";
             this._checkBoxWednesday.UseVisualStyleBackColor = true;
@@ -362,9 +370,9 @@
             // 
             this._checkBoxThursday.AutoSize = true;
             this._checkBoxThursday.Enabled = false;
-            this._checkBoxThursday.Location = new System.Drawing.Point(275, 217);
+            this._checkBoxThursday.Location = new System.Drawing.Point(303, 217);
             this._checkBoxThursday.Name = "_checkBoxThursday";
-            this._checkBoxThursday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxThursday.Size = new System.Drawing.Size(70, 17);
             this._checkBoxThursday.TabIndex = 21;
             this._checkBoxThursday.Text = "Thursday";
             this._checkBoxThursday.UseVisualStyleBackColor = true;
@@ -374,9 +382,9 @@
             // 
             this._checkBoxFriday.AutoSize = true;
             this._checkBoxFriday.Enabled = false;
-            this._checkBoxFriday.Location = new System.Drawing.Point(343, 217);
+            this._checkBoxFriday.Location = new System.Drawing.Point(379, 217);
             this._checkBoxFriday.Name = "_checkBoxFriday";
-            this._checkBoxFriday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxFriday.Size = new System.Drawing.Size(54, 17);
             this._checkBoxFriday.TabIndex = 22;
             this._checkBoxFriday.Text = "Friday";
             this._checkBoxFriday.UseVisualStyleBackColor = true;
@@ -386,13 +394,65 @@
             // 
             this._checkBoxSaturday.AutoSize = true;
             this._checkBoxSaturday.Enabled = false;
-            this._checkBoxSaturday.Location = new System.Drawing.Point(411, 217);
+            this._flowLayoutPanel.SetFlowBreak(this._checkBoxSaturday, true);
+            this._checkBoxSaturday.Location = new System.Drawing.Point(439, 217);
             this._checkBoxSaturday.Name = "_checkBoxSaturday";
-            this._checkBoxSaturday.Size = new System.Drawing.Size(62, 17);
+            this._checkBoxSaturday.Size = new System.Drawing.Size(68, 17);
             this._checkBoxSaturday.TabIndex = 23;
             this._checkBoxSaturday.Text = "Saturday";
             this._checkBoxSaturday.UseVisualStyleBackColor = true;
             this._checkBoxSaturday.Visible = false;
+            // 
+            // _breakScheduleUntilLabel
+            // 
+            this._breakScheduleUntilLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this._breakScheduleUntilLabel.AutoSize = true;
+            this._breakScheduleUntilLabel.Enabled = false;
+            this._breakScheduleUntilLabel.Location = new System.Drawing.Point(3, 244);
+            this._breakScheduleUntilLabel.Name = "_breakScheduleUntilLabel";
+            this._breakScheduleUntilLabel.Size = new System.Drawing.Size(26, 13);
+            this._breakScheduleUntilLabel.TabIndex = 24;
+            this._breakScheduleUntilLabel.Text = "until";
+            this._breakScheduleUntilLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this._breakScheduleUntilLabel.Visible = false;
+            // 
+            // _breakUntilDropDown
+            // 
+            this._breakUntilDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._breakUntilDropDown.Enabled = false;
+            this._breakUntilDropDown.FormattingEnabled = true;
+            this._breakUntilDropDown.Location = new System.Drawing.Point(35, 240);
+            this._breakUntilDropDown.Name = "_breakUntilDropDown";
+            this._breakUntilDropDown.Size = new System.Drawing.Size(121, 21);
+            this._breakUntilDropDown.TabIndex = 25;
+            this._breakUntilDropDown.Visible = false;
+            // 
+            // _breakUntilSpecificTimePicker
+            // 
+            this._breakUntilSpecificTimePicker.Enabled = false;
+            this._flowLayoutPanel.SetFlowBreak(this._breakUntilSpecificTimePicker, true);
+            this._breakUntilSpecificTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this._breakUntilSpecificTimePicker.Location = new System.Drawing.Point(162, 240);
+            this._breakUntilSpecificTimePicker.Name = "_breakUntilSpecificTimePicker";
+            this._breakUntilSpecificTimePicker.ShowUpDown = true;
+            this._breakUntilSpecificTimePicker.Size = new System.Drawing.Size(200, 20);
+            this._breakUntilSpecificTimePicker.TabIndex = 26;
+            this._breakUntilSpecificTimePicker.Visible = false;
+            // 
+            // _breakUntilSpecificDurationPicker
+            // 
+            this._breakUntilSpecificDurationPicker.Enabled = false;
+            this._flowLayoutPanel.SetFlowBreak(this._breakUntilSpecificDurationPicker, true);
+            this._breakUntilSpecificDurationPicker.Items.AddRange(new System.TimeSpan2[] {
+            new System.TimeSpan2(7, 0, 0, 0),
+            new System.TimeSpan2(14, 0, 0, 0),
+            new System.TimeSpan2(30, 0, 0, 0)});
+            this._breakUntilSpecificDurationPicker.Location = new System.Drawing.Point(3, 267);
+            this._breakUntilSpecificDurationPicker.Name = "_breakUntilSpecificDurationPicker";
+            this._breakUntilSpecificDurationPicker.Size = new System.Drawing.Size(121, 21);
+            this._breakUntilSpecificDurationPicker.TabIndex = 27;
+            this._breakUntilSpecificDurationPicker.Value = new System.TimeSpan2(7, 0, 0, 0);
+            this._breakUntilSpecificDurationPicker.Visible = false;
             // 
             // BreakForm
             // 
@@ -439,5 +499,9 @@
         private System.Windows.Forms.CheckBox _checkBoxThursday;
         private System.Windows.Forms.CheckBox _checkBoxFriday;
         private System.Windows.Forms.CheckBox _checkBoxSaturday;
+        private System.Windows.Forms.Label _breakScheduleUntilLabel;
+        private System.Windows.Forms.ComboBox _breakUntilDropDown;
+        private System.Windows.Forms.DateTimePicker _breakUntilSpecificTimePicker;
+        private System.Windows.Forms.TimeSpanPicker _breakUntilSpecificDurationPicker;
     }
 }

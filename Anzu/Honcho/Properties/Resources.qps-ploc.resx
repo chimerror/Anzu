@@ -209,4 +209,20 @@
     <value>[2F77F][!!_Sčђèðµĺê &amp;nèŵ ьѓéãк..._!!!!!!]</value>
     <comment>Shown on the Schedule new break item of the menu.</comment>
   </data>
+  <data name="BreakUntilSpecificTimeText" xml:space="preserve">
+    <value>[EDBFC][!!_á şрèĉîƒíċ ţìmê:_!!!!]</value>
+    <comment>Shown when scheduling breaks that will end at a specific time.</comment>
+  </data>
+  <data name="BreakUntilSpecificDurationText" xml:space="preserve">
+    <value>[D1FE5][!!_á šρéčįƒìċ đµѓáτíõи ħáş ρâššéď:_!!!!!!!!!!]</value>
+    <comment>Shown when scheduling breaks that will end when the specific duration has passed.</comment>
+  </data>
+  <data name="BreakUntilLabelText" xml:space="preserve">
+    <value>[DA064][!!_ùиτîļ_!!]</value>
+    <comment>Shown on the label for the drop down that controls how long a schedule should continue.</comment>
+  </data>
+  <data name="BreakUntilIndefinitelyText" xml:space="preserve">
+    <value>[E4B96][!!_тћę éйð òƒ ţímę._!!!!]</value>
+    <comment>Shown when scheduling breaks that will run on specific days indefinitely.</comment>
+  </data>
 </root>

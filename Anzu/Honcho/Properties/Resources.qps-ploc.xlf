@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15075.0557" build-num="15075">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15078.0346" build-num="15078">
     <header>
       <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
     </header>
@@ -22,8 +22,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break interval drop down.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleDailyText" translate="yes" xml:space="preserve">
-          <source>daily.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D69BD][!!_đãìļў._!!]</target>
+          <source>daily:</source>
+          <target state="translated" state-qualifier="mt-suggestion">[D69BD][!!_đãìļў._!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling daily.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleOnCertainDaysOfTheWeekText" translate="yes" xml:space="preserve">
@@ -35,6 +35,26 @@
           <source>starting</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[38A8B][!!_šťâŕţîиġ_!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break starting time drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakUntilSpecificTimeText" translate="yes" xml:space="preserve">
+          <source>a specific time:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[EDBFC][!!_á şрèĉîƒíċ ţìmê:_!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling breaks that will end at a specific time.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakUntilSpecificDurationText" translate="yes" xml:space="preserve">
+          <source>a specific duration has passed:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D1FE5][!!_á šρéčįƒìċ đµѓáτíõи ħáş ρâššéď:_!!!!!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling breaks that will end when the specific duration has passed.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakUntilLabelText" translate="yes" xml:space="preserve">
+          <source>until</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DA064][!!_ùиτîļ_!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the label for the drop down that controls how long a schedule should continue.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakUntilIndefinitelyText" translate="yes" xml:space="preserve">
+          <source>the end of time.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[E4B96][!!_тћę éйð òƒ ţímę._!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling breaks that will run on specific days indefinitely.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleIndefinitelyText" translate="yes" xml:space="preserve">
           <source>indefinitely.</source>
@@ -68,9 +88,8 @@
           </trans-unit>
         <trans-unit id="Resx/ScheduleNewBreakMenuName" translate="yes" xml:space="preserve">
           <source>Schedule %%amp;new break...</source>
-          <target state="needs-review-translation">[2F77F][!!_Sčђèðµĺê %%amp;nèŵ ьѓéãк..._!!!!!!]</target>
+          <target state="translated">[2F77F][!!_Sčђèðµĺê %%amp;nèŵ ьѓéãк..._!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown on the Schedule new break item of the menu.</note>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
           </trans-unit>
         <trans-unit id="Resx/RepeatAmountUntilCertainDurationText" translate="yes" xml:space="preserve">
           <source>for a certain duration:</source>
@@ -93,8 +112,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating for a certain number of times.</note>
           </trans-unit>
         <trans-unit id="Resx/StartingTimeSpecificTimeText" translate="yes" xml:space="preserve">
-          <source>at a specific time: </source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[FD951][!!_âτ â śрęćíƒìč ťìмê: _!!!!!!]</target>
+          <source>at a specific time:</source>
+          <target state="translated" state-qualifier="mt-suggestion">[FD951][!!_âτ â śрęćíƒìč ťìмê: _!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a specific time.</note>
           </trans-unit>
         <trans-unit id="Resx/StartingTimeNowText" translate="yes" xml:space="preserve">

@@ -13,7 +13,7 @@ namespace Honcho
         [STAThread]
         static void Main()
         {
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("qps-ploc");
+            //System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("qps-ploc");
 
             using (var taskService = new TaskService())
             {

@@ -130,7 +130,7 @@
     <comment>Shown before the break repeat type drop down.</comment>
   </data>
   <data name="BreakScheduleDailyText" xml:space="preserve">
-    <value>daily.</value>
+    <value>daily:</value>
     <comment>Shown when scheduling daily.</comment>
   </data>
   <data name="BreakScheduleEveryNumberOfDaysText" xml:space="preserve">
@@ -152,6 +152,22 @@
   <data name="BreakStartLabelText" xml:space="preserve">
     <value>starting</value>
     <comment>Shown before the break starting time drop down.</comment>
+  </data>
+  <data name="BreakUntilIndefinitelyText" xml:space="preserve">
+    <value>the end of time.</value>
+    <comment>Shown when scheduling breaks that will run on specific days indefinitely.</comment>
+  </data>
+  <data name="BreakUntilLabelText" xml:space="preserve">
+    <value>until</value>
+    <comment>Shown on the label for the drop down that controls how long a schedule should continue.</comment>
+  </data>
+  <data name="BreakUntilSpecificDurationText" xml:space="preserve">
+    <value>a specific duration has passed:</value>
+    <comment>Shown when scheduling breaks that will end when the specific duration has passed.</comment>
+  </data>
+  <data name="BreakUntilSpecificTimeText" xml:space="preserve">
+    <value>a specific time:</value>
+    <comment>Shown when scheduling breaks that will end at a specific time.</comment>
   </data>
   <data name="ExitMenuName" xml:space="preserve">
     <value>E&amp;xit</value>
@@ -206,7 +222,7 @@
     <comment>Shown when starting now.</comment>
   </data>
   <data name="StartingTimeSpecificTimeText" xml:space="preserve">
-    <value>at a specific time: </value>
+    <value>at a specific time:</value>
     <comment>Shown when starting at a specific time.</comment>
   </data>
 </root>

@@ -70,5 +70,17 @@ namespace Honcho
                     return (DaysOfTheWeek)0;
             }
         }
+
+        public static void HideAndDisable(this Control control)
+        {
+            control.Enabled = false;
+            control.Visible = false;
+        }
+        
+        public static void ShowAndEnable(this Control control)
+        {
+            control.Enabled = true;
+            control.Visible = true;
+        }
     }
 }
