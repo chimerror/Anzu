@@ -103,11 +103,13 @@ namespace Honcho
 
             //task.Actions.Add(new ExecAction("badgerer.exe"));
 
-            //_taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task);
+            //task.Data = "There's something secret here.";
+
+            //_taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task, TaskCreation.Create, Environment.UserName);
 
             if (_createForm == null)
             {
-                _createForm = new BreakForm();
+                _createForm = new BreakForm(_taskService, _taskFolder);
                 _createForm.FormClosed += CreateForm_OnClosed;
                 _createForm.Show();
             }

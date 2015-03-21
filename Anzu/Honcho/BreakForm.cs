@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.TaskScheduler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,13 @@ namespace Honcho
             " " +
             CultureInfo.CurrentUICulture.DateTimeFormat.ShortTimePattern;
 
-        public BreakForm()
+        private readonly TaskService _taskService;
+        private readonly TaskFolder _taskFolder;
+
+        public BreakForm(TaskService taskService, TaskFolder taskFolder)
         {
+            _taskService = taskService;
+            _taskFolder = taskFolder;
             InitializeComponent();
         }
 
@@ -81,6 +87,7 @@ namespace Honcho
                 bwt => bwt.GetFriendlyName(),
                 null);
 
+            _okButton.Click += OkButton_Click;
             _cancelButton.Click += CancelButton_Click;
         }
 
@@ -216,6 +223,13 @@ namespace Honcho
             _breakUntilDropDown.HideAndDisable();
             _breakUntilSpecificTimePicker.HideAndDisable();
             _breakUntilSpecificDurationPicker.HideAndDisable();
+        }
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            // Daily/Every number of days -> Daily
+            // Weekly -> Weekly
+            // Otherwise -> Time
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
