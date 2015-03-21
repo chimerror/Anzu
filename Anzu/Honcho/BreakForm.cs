@@ -18,9 +18,6 @@ namespace Honcho
             CultureInfo.CurrentUICulture.DateTimeFormat.ShortDatePattern +
             " " +
             CultureInfo.CurrentUICulture.DateTimeFormat.ShortTimePattern;
-        private DateTime _lastSpecificStartDateTime = DateTime.MinValue;
-        private DateTime _lastSpecificEndDateTime = DateTime.MinValue;
-        private DateTime _lastSpecificUntilDateTime = DateTime.MinValue;
 
         public BreakForm()
         {
@@ -31,8 +28,6 @@ namespace Honcho
         {
             base.OnLoad(e);
 
-            Debug.Assert(Controls.Count == Controls.OfType<Control>().Count(), "Not everything is a control!");
-
             _breakDurationLabel.Text = Properties.Resources.BreakDurationLabelText;
             _breakIntervalLabel.Text = Properties.Resources.BreakIntervalLabelText;
             _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
@@ -40,30 +35,53 @@ namespace Honcho
             _breakScheduleLabel.Text = Properties.Resources.BreakScheduleLabelText;
             _breakScheduleUntilLabel.Text = Properties.Resources.BreakUntilLabelText;
 
-            _startingTypeDropDown.SetComboBoxToEnum<StartingType>(st => st.GetFriendlyName(), StartingTypeDropDown_SelectedValueChanged);
+            _startingTypeDropDown.SetComboBoxToEnum<StartingType>(
+                st => st.GetFriendlyName(),
+                StartingTypeDropDown_SelectedValueChanged);
 
             _startingSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
-            _startingSpecificTimePicker.ValueChanged += StartingSpecificTimePicker_ValueChanged;
+            _startingSpecificTimePicker.Value = DateTime.Now;
 
-            _repeatDurationDropDown.SetComboBoxToEnum<RepeatType>(rt => rt.GetFriendlyName(), RepeatTypeDropDown_SelectedValueChanged);
+            _repeatDurationDropDown.SetComboBoxToEnum<RepeatType>(
+                rt => rt.GetFriendlyName(),
+                RepeatTypeDropDown_SelectedValueChanged);
 
             _repeatSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
-            _repeatSpecificTimePicker.ValueChanged += RepeatSpecificTimePicker_ValueChanged;
+            _repeatSpecificTimePicker.Value =
+                _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
 
-            _breakScheduleDropDown.SetComboBoxToEnum<ScheduleType>(st => st.GetFriendlyName(), ScheduleTypeDropDown_SelectedValueChanged);
+            _breakScheduleDropDown.SetComboBoxToEnum<ScheduleType>(
+                st => st.GetFriendlyName(),
+                ScheduleTypeDropDown_SelectedValueChanged);
 
-            _checkBoxSunday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Sunday);
-            _checkBoxMonday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Monday);
-            _checkBoxTuesday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Tuesday);
-            _checkBoxWednesday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Wednesday);
-            _checkBoxThursday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Thursday);
-            _checkBoxFriday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Friday);
-            _checkBoxSaturday.Text = CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Saturday);
+            _checkBoxSunday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Sunday);
+            _checkBoxMonday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Monday);
+            _checkBoxTuesday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Tuesday);
+            _checkBoxWednesday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Wednesday);
+            _checkBoxThursday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Thursday);
+            _checkBoxFriday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Friday);
+            _checkBoxSaturday.Text =
+                CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Saturday);
 
-            _breakUntilDropDown.SetComboBoxToEnum<UntilType>(ut => ut.GetFriendlyName(), UntilDropDown_SelectedValueChanged);
+            _breakUntilDropDown.SetComboBoxToEnum<UntilType>(
+                ut => ut.GetFriendlyName(),
+                UntilDropDown_SelectedValueChanged);
 
             _breakUntilSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
-            _breakUntilSpecificTimePicker.ValueChanged += BreakUntilSpecificTimePicker_ValueChanged;
+            _breakUntilSpecificTimePicker.Value =
+                _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
+
+            _badgererDisplayDropDown.SetComboBoxToEnum<BadgererWindowType>(
+                bwt => bwt.GetFriendlyName(),
+                null);
+
+            _cancelButton.Click += CancelButton_Click;
         }
 
         private void StartingTypeDropDown_SelectedValueChanged(object sender, EventArgs e)
@@ -77,10 +95,6 @@ namespace Honcho
             {
                 case StartingType.SpecificTime:
                     _startingSpecificTimePicker.ShowAndEnable();
-                    _startingSpecificTimePicker.Value = 
-                        _lastSpecificStartDateTime.Equals(DateTime.MinValue) ?
-                        DateTime.Now :
-                        _lastSpecificStartDateTime;
                     break;
 
                 case StartingType.AfterTheHour:
@@ -105,10 +119,6 @@ namespace Honcho
             {
                 case RepeatType.UntilSpecificTime:
                     _repeatSpecificTimePicker.ShowAndEnable();
-                    _repeatSpecificTimePicker.Value =
-                        _lastSpecificEndDateTime.Equals(DateTime.MinValue) ?
-                        DateTime.Now :
-                        _lastSpecificEndDateTime;
                     break;
 
                 case RepeatType.UntilCertainDuration:
@@ -188,10 +198,6 @@ namespace Honcho
             {
                 case UntilType.SpecificTime:
                     _breakUntilSpecificTimePicker.ShowAndEnable();
-                    _breakUntilSpecificTimePicker.Value =
-                        _lastSpecificUntilDateTime.Equals(DateTime.MinValue) ?
-                        DateTime.Now :
-                        _lastSpecificUntilDateTime;
                     break;
 
                 case UntilType.SpecificDuration:
@@ -212,19 +218,9 @@ namespace Honcho
             _breakUntilSpecificDurationPicker.HideAndDisable();
         }
 
-        private void StartingSpecificTimePicker_ValueChanged(object sender, EventArgs e)
+        private void CancelButton_Click(object sender, EventArgs e)
         {
-            _lastSpecificStartDateTime = _startingSpecificTimePicker.Value;
-        }
-
-        private void RepeatSpecificTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            _lastSpecificEndDateTime = _repeatSpecificTimePicker.Value;
-        }
-
-        private void BreakUntilSpecificTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            _lastSpecificUntilDateTime = _breakUntilSpecificTimePicker.Value;
+            Close();
         }
     }
 }

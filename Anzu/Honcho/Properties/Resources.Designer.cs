@@ -61,6 +61,33 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to maximized normal window.
+        /// </summary>
+        internal static string BadgererWindowMaximizedText {
+            get {
+                return ResourceManager.GetString("BadgererWindowMaximizedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overlay window.
+        /// </summary>
+        internal static string BadgererWindowOverlayText {
+            get {
+                return ResourceManager.GetString("BadgererWindowOverlayText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to unmaximized normal window.
+        /// </summary>
+        internal static string BadgererWindowUnmaximizedText {
+            get {
+                return ResourceManager.GetString("BadgererWindowUnmaximizedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Take a break for.
         /// </summary>
         internal static string BreakDurationLabelText {

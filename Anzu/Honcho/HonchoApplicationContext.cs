@@ -26,7 +26,7 @@ namespace Honcho
             {
                 throw new ArgumentNullException("taskService");
             }
-            
+
             if (taskFolder == null)
             {
                 throw new ArgumentNullException("taskFolder");
@@ -62,7 +62,7 @@ namespace Honcho
             _notifyIcon.Visible = false;
             base.ExitThreadCore();
         }
-        
+
         private void NotifyIcon_OnMouseUp(object sender, MouseEventArgs e)
         {
             // HACK: This will make the menu display on a left click as well as a right
