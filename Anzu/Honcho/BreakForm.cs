@@ -145,7 +145,7 @@ namespace Honcho
                     _everyNumberOfDaysPicker.ShowAndEnable();
                     _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, false);
                     break;
-                
+
                 case ScheduleType.OnCertainDaysOfTheWeek:
                     _checkBoxSunday.ShowAndEnable();
                     _checkBoxMonday.ShowAndEnable();
@@ -188,7 +188,7 @@ namespace Honcho
             {
                 case UntilType.SpecificTime:
                     _breakUntilSpecificTimePicker.ShowAndEnable();
-                    _breakUntilSpecificTimePicker.Value = 
+                    _breakUntilSpecificTimePicker.Value =
                         _lastSpecificUntilDateTime.Equals(DateTime.MinValue) ?
                         DateTime.Now :
                         _lastSpecificUntilDateTime;
@@ -211,7 +211,7 @@ namespace Honcho
             _breakUntilSpecificTimePicker.HideAndDisable();
             _breakUntilSpecificDurationPicker.HideAndDisable();
         }
-        
+
         private void StartingSpecificTimePicker_ValueChanged(object sender, EventArgs e)
         {
             _lastSpecificStartDateTime = _startingSpecificTimePicker.Value;

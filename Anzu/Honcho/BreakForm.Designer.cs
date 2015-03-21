@@ -62,8 +62,8 @@
             this._badgererDisplayLabel = new System.Windows.Forms.Label();
             this._badgererDisplayDropDown = new System.Windows.Forms.ComboBox();
             this._buttonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this._okButton = new System.Windows.Forms.Button();
             this._cancelButton = new System.Windows.Forms.Button();
+            this._okButton = new System.Windows.Forms.Button();
             this._flowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).BeginInit();
@@ -526,14 +526,23 @@
             this._buttonsTableLayoutPanel.ColumnCount = 2;
             this._buttonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this._buttonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._buttonsTableLayoutPanel.Controls.Add(this._okButton, 0, 0);
             this._buttonsTableLayoutPanel.Controls.Add(this._cancelButton, 1, 0);
+            this._buttonsTableLayoutPanel.Controls.Add(this._okButton, 0, 0);
             this._buttonsTableLayoutPanel.Location = new System.Drawing.Point(0, 368);
             this._buttonsTableLayoutPanel.Name = "_buttonsTableLayoutPanel";
             this._buttonsTableLayoutPanel.RowCount = 1;
             this._buttonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this._buttonsTableLayoutPanel.Size = new System.Drawing.Size(510, 29);
             this._buttonsTableLayoutPanel.TabIndex = 3;
+            // 
+            // _cancelButton
+            // 
+            this._cancelButton.Location = new System.Drawing.Point(258, 3);
+            this._cancelButton.Name = "_cancelButton";
+            this._cancelButton.Size = new System.Drawing.Size(75, 23);
+            this._cancelButton.TabIndex = 1;
+            this._cancelButton.Text = "Cancel";
+            this._cancelButton.UseVisualStyleBackColor = true;
             // 
             // _okButton
             // 
@@ -544,15 +553,6 @@
             this._okButton.TabIndex = 0;
             this._okButton.Text = "OK";
             this._okButton.UseVisualStyleBackColor = true;
-            // 
-            // _cancelButton
-            // 
-            this._cancelButton.Location = new System.Drawing.Point(258, 3);
-            this._cancelButton.Name = "_cancelButton";
-            this._cancelButton.Size = new System.Drawing.Size(75, 23);
-            this._cancelButton.TabIndex = 1;
-            this._cancelButton.Text = "Cancel";
-            this._cancelButton.UseVisualStyleBackColor = true;
             // 
             // BreakForm
             // 
