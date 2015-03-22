@@ -15,14 +15,26 @@ namespace Honcho
         private readonly static Version AnzuTaskDataVersion = Assembly.GetAssembly(AnzuTaskDataType).GetName().Version;
         private readonly static Guid AnzuTaskDataGuid = AnzuTaskDataType.GUID;
 
-        public Version AnzuVersion { get; private set; }
-        public Guid AnzuGuid { get; private set; }
+        [Obsolete("To only be used for serialization")]
+        public Version AnzuVersion { get; set; }
+
+        [Obsolete("To only be used for serialization")]
+        public Guid AnzuGuid { get; set; }
+
         public String FriendlyName { get; set; }
+
+        [Obsolete("To only be used for serialization")]
+        [JsonConstructor]
+        public AnzuTaskData()
+        {
+        }
 
         public AnzuTaskData(string friendlyName)
         {
+#pragma warning disable 618
             AnzuVersion = AnzuTaskDataVersion;
             AnzuGuid = AnzuTaskDataGuid;
+#pragma warning restore 618
             FriendlyName = friendlyName;
         }
 
@@ -33,7 +45,32 @@ namespace Honcho
 
         public static AnzuTaskData Deserialize(string serializedData)
         {
-            return JsonConvert.DeserializeObject<AnzuTaskData>(serializedData);
+            var newAnzuTaskData = JsonConvert.DeserializeObject<AnzuTaskData>(serializedData);
+
+#pragma warning disable 618
+            if (newAnzuTaskData.AnzuGuid != AnzuTaskDataGuid)
+            {
+                throw new JsonSerializationException("Data did not come from Anzu.");
+            }
+#pragma warning restore 618
+
+            return newAnzuTaskData;
+        }
+
+        public static bool TryDeserialize(string serializedData, out AnzuTaskData newAnzuTaskData)
+        {
+            bool success = false;
+            try
+            {
+                newAnzuTaskData = Deserialize(serializedData);
+                success = true;
+            }
+            catch (JsonSerializationException)
+            {
+                newAnzuTaskData = null;
+            }
+
+            return success;
         }
     }
 }
