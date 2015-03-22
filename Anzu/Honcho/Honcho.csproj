@@ -11,7 +11,7 @@
     <AssemblyName>Honcho</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15080.0516</AssemblyVersion>
+    <AssemblyVersion>0.0.15081.0212</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -87,12 +87,6 @@
     <Compile Include="ScheduleType.cs" />
     <Compile Include="StartingType.cs" />
     <Compile Include="UntilType.cs" />
-    <EmbeddedResource Include="BreakForm.qps-ploc.resx">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BreakForm.qps-ploc.xlf</DependentUpon>
-      <culture>qps-ploc</culture>
-    </EmbeddedResource>
     <EmbeddedResource Include="BreakForm.resx">
       <DependentUpon>BreakForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,10 +129,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <XliffResource Include="BreakForm.qps-ploc.xlf">
-      <Generator>XliffResxGenerator</Generator>
-      <LastGenOutput>BreakForm.qps-ploc.resx</LastGenOutput>
-    </XliffResource>
     <XliffResource Include="Properties\Resources.qps-ploc.xlf">
       <Generator>XliffResxGenerator</Generator>
       <LastGenOutput>Resources.qps-ploc.resx</LastGenOutput>

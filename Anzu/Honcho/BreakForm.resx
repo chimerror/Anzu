@@ -117,4 +117,1120 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_flowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_friendlyNameLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_friendlyNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_friendlyNameLabel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="_friendlyNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="_friendlyNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="_friendlyNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="_friendlyNameLabel.Text" xml:space="preserve">
+    <value>Friendly Name</value>
+  </data>
+  <data name="_friendlyNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameLabel.Name" xml:space="preserve">
+    <value>_friendlyNameLabel</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_friendlyNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 3</value>
+  </data>
+  <data name="_friendlyNameTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>256</value>
+  </data>
+  <data name="_friendlyNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 20</value>
+  </data>
+  <data name="_friendlyNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameTextBox.Name" xml:space="preserve">
+    <value>_friendlyNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameTextBox.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_friendlyNameTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_breakDurationLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_breakDurationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_breakDurationLabel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="_breakDurationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 33</value>
+  </data>
+  <data name="_breakDurationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="_breakDurationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_breakDurationLabel.Text" xml:space="preserve">
+    <value>Take a break for</value>
+  </data>
+  <data name="_breakDurationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationLabel.Name" xml:space="preserve">
+    <value>_breakDurationLabel</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_breakDurationPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 29</value>
+  </data>
+  <data name="_breakDurationPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_breakDurationPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationPicker.Name" xml:space="preserve">
+    <value>_breakDurationPicker</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TimeSpanPicker, TimeSpan2, Version=2.0.4.27428, Culture=neutral, PublicKeyToken=0f30172e1249faac</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakDurationPicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_breakIntervalLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_breakIntervalLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_breakIntervalLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="_breakIntervalLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="_breakIntervalLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_breakIntervalLabel.Text" xml:space="preserve">
+    <value>every</value>
+  </data>
+  <data name="_breakIntervalLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalLabel.Name" xml:space="preserve">
+    <value>_breakIntervalLabel</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_breakIntervalPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 56</value>
+  </data>
+  <data name="_breakIntervalPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_breakIntervalPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalPicker.Name" xml:space="preserve">
+    <value>_breakIntervalPicker</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TimeSpanPicker, TimeSpan2, Version=2.0.4.27428, Culture=neutral, PublicKeyToken=0f30172e1249faac</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakIntervalPicker.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_startingTimeLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_startingTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_startingTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 87</value>
+  </data>
+  <data name="_startingTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="_startingTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="_startingTimeLabel.Text" xml:space="preserve">
+    <value>starting</value>
+  </data>
+  <data name="_startingTimeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeLabel.Name" xml:space="preserve">
+    <value>_startingTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_startingTypeDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 83</value>
+  </data>
+  <data name="_startingTypeDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_startingTypeDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;_startingTypeDropDown.Name" xml:space="preserve">
+    <value>_startingTypeDropDown</value>
+  </data>
+  <data name="&gt;&gt;_startingTypeDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_startingTypeDropDown.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_startingTypeDropDown.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="_startingTimeAfterHourPicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_startingTimeAfterHourPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 83</value>
+  </data>
+  <data name="_startingTimeAfterHourPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="_startingTimeAfterHourPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="_startingTimeAfterHourPicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeAfterHourPicker.Name" xml:space="preserve">
+    <value>_startingTimeAfterHourPicker</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeAfterHourPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeAfterHourPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_startingTimeAfterHourPicker.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_startingSpecificTimePicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_startingSpecificTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 110</value>
+  </data>
+  <data name="_startingSpecificTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="_startingSpecificTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="_startingSpecificTimePicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_startingSpecificTimePicker.Name" xml:space="preserve">
+    <value>_startingSpecificTimePicker</value>
+  </data>
+  <data name="&gt;&gt;_startingSpecificTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_startingSpecificTimePicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_startingSpecificTimePicker.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="_breakRepeatLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_breakRepeatLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_breakRepeatLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 140</value>
+  </data>
+  <data name="_breakRepeatLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="_breakRepeatLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_breakRepeatLabel.Text" xml:space="preserve">
+    <value>repeat break(s)</value>
+  </data>
+  <data name="_breakRepeatLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_breakRepeatLabel.Name" xml:space="preserve">
+    <value>_breakRepeatLabel</value>
+  </data>
+  <data name="&gt;&gt;_breakRepeatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakRepeatLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakRepeatLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="_repeatDurationDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 136</value>
+  </data>
+  <data name="_repeatDurationDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_repeatDurationDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;_repeatDurationDropDown.Name" xml:space="preserve">
+    <value>_repeatDurationDropDown</value>
+  </data>
+  <data name="&gt;&gt;_repeatDurationDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_repeatDurationDropDown.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_repeatDurationDropDown.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="_repeatSpecificTimePicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_repeatSpecificTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 136</value>
+  </data>
+  <data name="_repeatSpecificTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="_repeatSpecificTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_repeatSpecificTimePicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificTimePicker.Name" xml:space="preserve">
+    <value>_repeatSpecificTimePicker</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificTimePicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificTimePicker.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="_repeatCertainDurationPicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_repeatCertainDurationPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 163</value>
+  </data>
+  <data name="_repeatCertainDurationPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_repeatCertainDurationPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="_repeatCertainDurationPicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_repeatCertainDurationPicker.Name" xml:space="preserve">
+    <value>_repeatCertainDurationPicker</value>
+  </data>
+  <data name="&gt;&gt;_repeatCertainDurationPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TimeSpanPicker, TimeSpan2, Version=2.0.4.27428, Culture=neutral, PublicKeyToken=0f30172e1249faac</value>
+  </data>
+  <data name="&gt;&gt;_repeatCertainDurationPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_repeatCertainDurationPicker.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 190</value>
+  </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificNumberOfTimesPicker.Name" xml:space="preserve">
+    <value>_repeatSpecificNumberOfTimesPicker</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificNumberOfTimesPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificNumberOfTimesPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_repeatSpecificNumberOfTimesPicker.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="_breakScheduleLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_breakScheduleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_breakScheduleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 220</value>
+  </data>
+  <data name="_breakScheduleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="_breakScheduleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_breakScheduleLabel.Text" xml:space="preserve">
+    <value>schedule break(s)</value>
+  </data>
+  <data name="_breakScheduleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleLabel.Name" xml:space="preserve">
+    <value>_breakScheduleLabel</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="_breakScheduleDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 216</value>
+  </data>
+  <data name="_breakScheduleDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_breakScheduleDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleDropDown.Name" xml:space="preserve">
+    <value>_breakScheduleDropDown</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleDropDown.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleDropDown.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="_everyNumberOfDaysPicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_everyNumberOfDaysPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 216</value>
+  </data>
+  <data name="_everyNumberOfDaysPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="_everyNumberOfDaysPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="_everyNumberOfDaysPicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_everyNumberOfDaysPicker.Name" xml:space="preserve">
+    <value>_everyNumberOfDaysPicker</value>
+  </data>
+  <data name="&gt;&gt;_everyNumberOfDaysPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_everyNumberOfDaysPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_everyNumberOfDaysPicker.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="_checkBoxSunday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxSunday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxSunday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 243</value>
+  </data>
+  <data name="_checkBoxSunday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="_checkBoxSunday.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="_checkBoxSunday.Text" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="_checkBoxSunday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSunday.Name" xml:space="preserve">
+    <value>_checkBoxSunday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSunday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSunday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSunday.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="_checkBoxMonday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxMonday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxMonday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 243</value>
+  </data>
+  <data name="_checkBoxMonday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="_checkBoxMonday.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="_checkBoxMonday.Text" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="_checkBoxMonday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxMonday.Name" xml:space="preserve">
+    <value>_checkBoxMonday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxMonday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxMonday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxMonday.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="_checkBoxTuesday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxTuesday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxTuesday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 243</value>
+  </data>
+  <data name="_checkBoxTuesday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="_checkBoxTuesday.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="_checkBoxTuesday.Text" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="_checkBoxTuesday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxTuesday.Name" xml:space="preserve">
+    <value>_checkBoxTuesday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxTuesday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxTuesday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxTuesday.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="_checkBoxWednesday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxWednesday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxWednesday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 243</value>
+  </data>
+  <data name="_checkBoxWednesday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 17</value>
+  </data>
+  <data name="_checkBoxWednesday.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="_checkBoxWednesday.Text" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="_checkBoxWednesday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxWednesday.Name" xml:space="preserve">
+    <value>_checkBoxWednesday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxWednesday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxWednesday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxWednesday.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="_checkBoxThursday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxThursday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxThursday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 243</value>
+  </data>
+  <data name="_checkBoxThursday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="_checkBoxThursday.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="_checkBoxThursday.Text" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="_checkBoxThursday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxThursday.Name" xml:space="preserve">
+    <value>_checkBoxThursday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxThursday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxThursday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxThursday.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="_checkBoxFriday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxFriday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxFriday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 243</value>
+  </data>
+  <data name="_checkBoxFriday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="_checkBoxFriday.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="_checkBoxFriday.Text" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="_checkBoxFriday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxFriday.Name" xml:space="preserve">
+    <value>_checkBoxFriday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxFriday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxFriday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxFriday.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="_checkBoxSaturday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_checkBoxSaturday.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_checkBoxSaturday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 243</value>
+  </data>
+  <data name="_checkBoxSaturday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="_checkBoxSaturday.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="_checkBoxSaturday.Text" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="_checkBoxSaturday.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSaturday.Name" xml:space="preserve">
+    <value>_checkBoxSaturday</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSaturday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSaturday.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_checkBoxSaturday.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 270</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Text" xml:space="preserve">
+    <value>until</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="_breakScheduleUntilLabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleUntilLabel.Name" xml:space="preserve">
+    <value>_breakScheduleUntilLabel</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleUntilLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleUntilLabel.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakScheduleUntilLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="_breakUntilDropDown.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_breakUntilDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 266</value>
+  </data>
+  <data name="_breakUntilDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_breakUntilDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="_breakUntilDropDown.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilDropDown.Name" xml:space="preserve">
+    <value>_breakUntilDropDown</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilDropDown.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilDropDown.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="_breakUntilSpecificTimePicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_breakUntilSpecificTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 266</value>
+  </data>
+  <data name="_breakUntilSpecificTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="_breakUntilSpecificTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="_breakUntilSpecificTimePicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificTimePicker.Name" xml:space="preserve">
+    <value>_breakUntilSpecificTimePicker</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificTimePicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificTimePicker.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="_breakUntilSpecificDurationPicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="_breakUntilSpecificDurationPicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 293</value>
+  </data>
+  <data name="_breakUntilSpecificDurationPicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_breakUntilSpecificDurationPicker.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="_breakUntilSpecificDurationPicker.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificDurationPicker.Name" xml:space="preserve">
+    <value>_breakUntilSpecificDurationPicker</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificDurationPicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TimeSpanPicker, TimeSpan2, Version=2.0.4.27428, Culture=neutral, PublicKeyToken=0f30172e1249faac</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificDurationPicker.Parent" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_breakUntilSpecificDurationPicker.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="_flowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_flowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 317</value>
+  </data>
+  <data name="_flowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_flowLayoutPanel.Name" xml:space="preserve">
+    <value>_flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_flowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_flowLayoutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_flowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lockScreenCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_lockScreenCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_lockScreenCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 5</value>
+  </data>
+  <data name="_lockScreenCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 17</value>
+  </data>
+  <data name="_lockScreenCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_lockScreenCheckBox.Text" xml:space="preserve">
+    <value>Lock the screen</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Name" xml:space="preserve">
+    <value>_lockScreenCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_badgererDisplayLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="_badgererDisplayLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_badgererDisplayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 7</value>
+  </data>
+  <data name="_badgererDisplayLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 13</value>
+  </data>
+  <data name="_badgererDisplayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="_badgererDisplayLabel.Text" xml:space="preserve">
+    <value>Display Badgerer window as: </value>
+  </data>
+  <data name="_badgererDisplayLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Name" xml:space="preserve">
+    <value>_badgererDisplayLabel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_badgererDisplayDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 3</value>
+  </data>
+  <data name="_badgererDisplayDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="_badgererDisplayDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Name" xml:space="preserve">
+    <value>_badgererDisplayDropDown</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 19</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 27</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Name" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>_badgererOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 297</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 65</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Text" xml:space="preserve">
+    <value>When taking a break:</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Name" xml:space="preserve">
+    <value>_badgererOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="_cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 3</value>
+  </data>
+  <data name="_cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="_cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_cancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Name" xml:space="preserve">
+    <value>_cancelButton</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Parent" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_okButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="_okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 3</value>
+  </data>
+  <data name="_okButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="_okButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Name" xml:space="preserve">
+    <value>_okButton</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Parent" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 368</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 29</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Name" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_cancelButton" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_okButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>520, 401</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Schedule New Break</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BreakForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

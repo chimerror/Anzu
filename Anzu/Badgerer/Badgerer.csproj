@@ -11,7 +11,7 @@
     <AssemblyName>Badgerer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15080.0516</AssemblyVersion>
+    <AssemblyVersion>0.0.15081.0211</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -84,12 +84,6 @@
     <EmbeddedResource Include="BadgererForm.resx">
       <DependentUpon>BadgererForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BadgererForm.qps-ploc.resx">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BadgererForm.qps-ploc.xlf</DependentUpon>
-      <culture>qps-ploc</culture>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.qps-ploc.resx">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,11 +115,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <XliffResource Include="BadgererForm.qps-ploc.xlf">
-      <Generator>XliffResxGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>BadgererForm.qps-ploc1.resx</LastGenOutput>
-    </XliffResource>
     <XliffResource Include="Properties\Resources.qps-ploc.xlf">
       <Generator>XliffResxGenerator</Generator>
       <LastGenOutput>Resources.qps-ploc.resx</LastGenOutput>
