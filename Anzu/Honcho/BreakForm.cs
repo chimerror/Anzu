@@ -34,13 +34,11 @@ namespace Honcho
         {
             base.OnLoad(e);
 
+            _friendlyNameLabel.Text = Properties.Resources.FriendlyNameLabelText;
             _breakDurationLabel.Text = Properties.Resources.BreakDurationLabelText;
             _breakIntervalLabel.Text = Properties.Resources.BreakIntervalLabelText;
-            _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
-            _breakRepeatLabel.Text = Properties.Resources.BreakRepeatLabelText;
-            _breakScheduleLabel.Text = Properties.Resources.BreakScheduleLabelText;
-            _breakScheduleUntilLabel.Text = Properties.Resources.BreakUntilLabelText;
 
+            _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
             _startingTypeDropDown.SetComboBoxToEnum<StartingType>(
                 st => st.GetFriendlyName(),
                 StartingTypeDropDown_SelectedValueChanged);
@@ -48,6 +46,7 @@ namespace Honcho
             _startingSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
             _startingSpecificTimePicker.Value = DateTime.Now;
 
+            _breakRepeatLabel.Text = Properties.Resources.BreakRepeatLabelText;
             _repeatDurationDropDown.SetComboBoxToEnum<RepeatType>(
                 rt => rt.GetFriendlyName(),
                 RepeatTypeDropDown_SelectedValueChanged);
@@ -56,6 +55,7 @@ namespace Honcho
             _repeatSpecificTimePicker.Value =
                 _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
 
+            _breakScheduleLabel.Text = Properties.Resources.BreakScheduleLabelText;
             _breakScheduleDropDown.SetComboBoxToEnum<ScheduleType>(
                 st => st.GetFriendlyName(),
                 ScheduleTypeDropDown_SelectedValueChanged);
@@ -75,6 +75,7 @@ namespace Honcho
             _checkBoxSaturday.Text =
                 CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Saturday);
 
+            _breakScheduleUntilLabel.Text = Properties.Resources.BreakUntilLabelText;
             _breakUntilDropDown.SetComboBoxToEnum<UntilType>(
                 ut => ut.GetFriendlyName(),
                 UntilDropDown_SelectedValueChanged);
@@ -83,11 +84,18 @@ namespace Honcho
             _breakUntilSpecificTimePicker.Value =
                 _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
 
+            _badgererOptionsGroupBox.Text = Properties.Resources.BadgererDisplayOptionsGroupBoxText;
+
+            _lockScreenCheckBox.Text = Properties.Resources.LockScreenCheckboxText;
+
+            _badgererDisplayLabel.Text = Properties.Resources.BadgererWindowDisplayLabel;
             _badgererDisplayDropDown.SetComboBoxToEnum<BadgererWindowType>(
                 bwt => bwt.GetFriendlyName(),
                 null);
 
+            _okButton.Text = Properties.Resources.OkButtonText;
             _okButton.Click += OkButton_Click;
+            _cancelButton.Text = Properties.Resources.CancelButtonText;
             _cancelButton.Click += CancelButton_Click;
         }
 

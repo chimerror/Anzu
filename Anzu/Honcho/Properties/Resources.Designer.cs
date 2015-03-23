@@ -61,6 +61,24 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to When taking a break:.
+        /// </summary>
+        internal static string BadgererDisplayOptionsGroupBoxText {
+            get {
+                return ResourceManager.GetString("BadgererDisplayOptionsGroupBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display Badgerer Window as:.
+        /// </summary>
+        internal static string BadgererWindowDisplayLabel {
+            get {
+                return ResourceManager.GetString("BadgererWindowDisplayLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to maximized normal window.
         /// </summary>
         internal static string BadgererWindowMaximizedText {
@@ -142,7 +160,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to schedule breaks(s).
+        ///   Looks up a localized string similar to schedule break(s).
         /// </summary>
         internal static string BreakScheduleLabelText {
             get {
@@ -205,11 +223,29 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string CancelButtonText {
+            get {
+                return ResourceManager.GetString("CancelButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E&amp;xit.
         /// </summary>
         internal static string ExitMenuName {
             get {
                 return ResourceManager.GetString("ExitMenuName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friendly Name.
+        /// </summary>
+        internal static string FriendlyNameLabelText {
+            get {
+                return ResourceManager.GetString("FriendlyNameLabelText", resourceCulture);
             }
         }
         
@@ -229,6 +265,24 @@ namespace Honcho.Properties {
         internal static string HonchoToolTip {
             get {
                 return ResourceManager.GetString("HonchoToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lock the screen.
+        /// </summary>
+        internal static string LockScreenCheckboxText {
+            get {
+                return ResourceManager.GetString("LockScreenCheckboxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string OkButtonText {
+            get {
+                return ResourceManager.GetString("OkButtonText", resourceCulture);
             }
         }
         
@@ -283,6 +337,15 @@ namespace Honcho.Properties {
         internal static string ScheduleNewBreakMenuName {
             get {
                 return ResourceManager.GetString("ScheduleNewBreakMenuName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule New Break.
+        /// </summary>
+        internal static string ScheduleNewBreakTitleBarText {
+            get {
+                return ResourceManager.GetString("ScheduleNewBreakTitleBarText", resourceCulture);
             }
         }
         

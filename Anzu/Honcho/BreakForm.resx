@@ -993,8 +993,101 @@
   <data name="_badgererOptionsGroupBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Name" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>_badgererOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 320</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 65</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_badgererOptionsGroupBox.Text" xml:space="preserve">
+    <value>When taking a break:</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Name" xml:space="preserve">
+    <value>_badgererOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="_badgererOptionsFlowLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Name" xml:space="preserve">
+    <value>_lockScreenCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Name" xml:space="preserve">
+    <value>_badgererDisplayLabel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Name" xml:space="preserve">
+    <value>_badgererDisplayDropDown</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Parent" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererDisplayDropDown.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 19</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>498, 27</value>
+  </data>
+  <data name="_badgererOptionsFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Name" xml:space="preserve">
+    <value>_badgererOptionsFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>_badgererOptionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="_lockScreenCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -1080,56 +1173,65 @@
   <data name="&gt;&gt;_badgererDisplayDropDown.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="_badgererOptionsFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 19</value>
-  </data>
-  <data name="_badgererOptionsFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 27</value>
-  </data>
-  <data name="_badgererOptionsFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Name" xml:space="preserve">
-    <value>_badgererOptionsFlowLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.Parent" xml:space="preserve">
-    <value>_badgererOptionsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsFlowLayoutPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="_badgererOptionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 297</value>
-  </data>
-  <data name="_badgererOptionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 65</value>
-  </data>
-  <data name="_badgererOptionsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="_badgererOptionsGroupBox.Text" xml:space="preserve">
-    <value>When taking a break:</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsGroupBox.Name" xml:space="preserve">
-    <value>_badgererOptionsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;_badgererOptionsGroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="_buttonsTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="_buttonsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Name" xml:space="preserve">
+    <value>_cancelButton</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.Parent" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_cancelButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Name" xml:space="preserve">
+    <value>_okButton</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_okButton.Parent" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 391</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 29</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Name" xml:space="preserve">
+    <value>_buttonsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;_buttonsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="_buttonsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_cancelButton" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_okButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="_cancelButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="_cancelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>258, 3</value>
@@ -1158,6 +1260,9 @@
   <data name="_okButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="_okButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="_okButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 3</value>
   </data>
@@ -1182,33 +1287,6 @@
   <data name="&gt;&gt;_okButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="_buttonsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 368</value>
-  </data>
-  <data name="_buttonsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="_buttonsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>510, 29</value>
-  </data>
-  <data name="_buttonsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;_buttonsTableLayoutPanel.Name" xml:space="preserve">
-    <value>_buttonsTableLayoutPanel</value>
-  </data>
-  <data name="&gt;&gt;_buttonsTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;_buttonsTableLayoutPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;_buttonsTableLayoutPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="_buttonsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="_cancelButton" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="_okButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1222,7 +1300,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>520, 401</value>
+    <value>520, 425</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Schedule New Break</value>

@@ -202,7 +202,7 @@
     <comment>Shown before the break starting time drop down.</comment>
   </data>
   <data name="BreakScheduleLabelText" xml:space="preserve">
-    <value>[DCC32][!!_ŝĉђęđúľé ъřéáкš(ś)_!!!!!!]</value>
+    <value>[DCC32][!!_ŝĉђęđúľé ъřéáк(ś)_!!!!!!]</value>
     <comment>Shown before the break schedule type drop down.</comment>
   </data>
   <data name="ScheduleNewBreakMenuName" xml:space="preserve">
@@ -224,5 +224,45 @@
   <data name="BreakUntilIndefinitelyText" xml:space="preserve">
     <value>[E4B96][!!_тћę éйð òƒ ţímę._!!!!]</value>
     <comment>Shown when scheduling breaks that will run on specific days indefinitely.</comment>
+  </data>
+  <data name="BadgererWindowMaximizedText" xml:space="preserve">
+    <value>[FA483][!!_мã×ímîźèđ ηóѓмáł ẃîηďóẅ_!!!!!!]</value>
+    <comment>Shown for the Badgerer maximized normal window mode.</comment>
+  </data>
+  <data name="BadgererWindowUnmaximizedText" xml:space="preserve">
+    <value>[E65CF][!!_ùйmá×įмíźęđ йõŕмâľ ẁíиðôẅ_!!!!!!!!]</value>
+    <comment>Shown for the Badgerer unmaximized window mode.</comment>
+  </data>
+  <data name="BadgererWindowOverlayText" xml:space="preserve">
+    <value>[D70B1][!!_ôνéѓĺâУ ẅíηðõẁ_!!!!]</value>
+    <comment>Shown for the Badgerer overlay window mode.</comment>
+  </data>
+  <data name="BadgererWindowDisplayLabel" xml:space="preserve">
+    <value>[64C09][!!_ÐîśþļâУ Вàďġęŕéŗ Ẁíηðôŵ ãš:_!!!!!!!!]</value>
+    <comment>Shown before the drop-down to set how the Badgerer window is displayed.</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>[D9A9C][!!_Ćãηćèł_!!]</value>
+    <comment>Shown on the Cancel button.</comment>
+  </data>
+  <data name="FriendlyNameLabelText" xml:space="preserve">
+    <value>[6DEFA][!!_₣ŕìêηďĺÿ Ňáмê_!!]</value>
+    <comment>Shown before the text box for the friendly name.</comment>
+  </data>
+  <data name="OkButtonText" xml:space="preserve">
+    <value>[EEA48][!!_ÔĶ_!!]</value>
+    <comment>Shown on the OK button.</comment>
+  </data>
+  <data name="LockScreenCheckboxText" xml:space="preserve">
+    <value>[D3A72][!!_Ļõćќ ţнè śĉřêęи_!!!!]</value>
+    <comment>Shown on the check box to lock the screen during a break.</comment>
+  </data>
+  <data name="ScheduleNewBreakTitleBarText" xml:space="preserve">
+    <value>[8FB96][!!_Ŝĉĥęďµľé Ñęŵ Βřèáќ_!!!!!!]</value>
+    <comment>Shown on the dialog to schedule a new break.</comment>
+  </data>
+  <data name="BadgererDisplayOptionsGroupBoxText" xml:space="preserve">
+    <value>[3733D][!!_Ŵħèй ţàķįηğ â ъŗêãķ:_!!!!!!]</value>
+    <comment>Shown on the group box containing items concerning the display of the Badgerer program when taking a break.</comment>
   </data>
 </root>

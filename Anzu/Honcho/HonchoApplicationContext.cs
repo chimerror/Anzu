@@ -110,6 +110,7 @@ namespace Honcho
             if (_createForm == null)
             {
                 _createForm = new BreakForm(_taskService, _taskFolder);
+                _createForm.Text = Properties.Resources.ScheduleNewBreakTitleBarText;
                 _createForm.FormClosed += CreateForm_OnClosed;
                 _createForm.Show();
             }

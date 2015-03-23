@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BadgererDisplayOptionsGroupBoxText" xml:space="preserve">
+    <value>When taking a break:</value>
+    <comment>Shown on the group box containing items concerning the display of the Badgerer program when taking a break.</comment>
+  </data>
+  <data name="BadgererWindowDisplayLabel" xml:space="preserve">
+    <value>Display Badgerer Window as:</value>
+    <comment>Shown before the drop-down to set how the Badgerer window is displayed.</comment>
+  </data>
   <data name="BadgererWindowMaximizedText" xml:space="preserve">
     <value>maximized normal window</value>
     <comment>Shown for the Badgerer maximized normal window mode.</comment>
@@ -154,7 +162,7 @@
     <comment>Shown when scheduling indefinitely</comment>
   </data>
   <data name="BreakScheduleLabelText" xml:space="preserve">
-    <value>schedule breaks(s)</value>
+    <value>schedule break(s)</value>
     <comment>Shown before the break schedule type drop down.</comment>
   </data>
   <data name="BreakScheduleOnCertainDaysOfTheWeekText" xml:space="preserve">
@@ -181,9 +189,17 @@
     <value>a specific time:</value>
     <comment>Shown when scheduling breaks that will end at a specific time.</comment>
   </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Shown on the Cancel button.</comment>
+  </data>
   <data name="ExitMenuName" xml:space="preserve">
     <value>E&amp;xit</value>
     <comment>Shown on the Exit item of the menu.</comment>
+  </data>
+  <data name="FriendlyNameLabelText" xml:space="preserve">
+    <value>Friendly Name</value>
+    <comment>Shown before the text box for the friendly name.</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="HonchoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -192,6 +208,14 @@
   <data name="HonchoToolTip" xml:space="preserve">
     <value>Anzu Honcho</value>
     <comment>Shown as a tooltip for the Honcho Notification Tray Item</comment>
+  </data>
+  <data name="LockScreenCheckboxText" xml:space="preserve">
+    <value>Lock the screen</value>
+    <comment>Shown on the check box to lock the screen during a break.</comment>
+  </data>
+  <data name="OkButtonText" xml:space="preserve">
+    <value>OK</value>
+    <comment>Shown on the OK button.</comment>
   </data>
   <data name="RepeatAmountCertainNumberOfTimesText" xml:space="preserve">
     <value>for a certain number of times:</value>
@@ -216,6 +240,10 @@
   <data name="ScheduleNewBreakMenuName" xml:space="preserve">
     <value>Schedule &amp;new break...</value>
     <comment>Shown on the Schedule new break item of the menu.</comment>
+  </data>
+  <data name="ScheduleNewBreakTitleBarText" xml:space="preserve">
+    <value>Schedule New Break</value>
+    <comment>Shown on the dialog to schedule a new break.</comment>
   </data>
   <data name="StartingTimeAfterScreenLockText" xml:space="preserve">
     <value>after the screen is locked.</value>

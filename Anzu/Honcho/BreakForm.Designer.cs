@@ -424,6 +424,7 @@
             this._badgererOptionsFlowLayoutPanel.ResumeLayout(false);
             this._badgererOptionsFlowLayoutPanel.PerformLayout();
             this._buttonsTableLayoutPanel.ResumeLayout(false);
+            this._buttonsTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
