@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BreakForm));
-            this._flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this._friendlyNameLabel = new System.Windows.Forms.Label();
             this._friendlyNameTextBox = new System.Windows.Forms.TextBox();
             this._breakDurationLabel = new System.Windows.Forms.Label();
@@ -60,55 +59,40 @@
             this._breakUntilSpecificTimePicker = new System.Windows.Forms.DateTimePicker();
             this._breakUntilSpecificDurationPicker = new System.Windows.Forms.TimeSpanPicker();
             this._badgererOptionsGroupBox = new System.Windows.Forms.GroupBox();
-            this._badgererOptionsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this._lockScreenCheckBox = new System.Windows.Forms.CheckBox();
             this._badgererDisplayLabel = new System.Windows.Forms.Label();
             this._badgererDisplayDropDown = new System.Windows.Forms.ComboBox();
-            this._buttonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this._cancelButton = new System.Windows.Forms.Button();
             this._okButton = new System.Windows.Forms.Button();
-            this._flowLayoutPanel.SuspendLayout();
+            this._overarchingTableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this._breakOptionsGroupBox = new System.Windows.Forms.GroupBox();
+            this._breakOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._badgererOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._scheduleOptionsGroupBox = new System.Windows.Forms.GroupBox();
+            this._scheduleOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._startingTimePanel = new System.Windows.Forms.Panel();
+            this._breakRepeatPanel = new System.Windows.Forms.Panel();
+            this._breakSchedulePanel = new System.Windows.Forms.Panel();
+            this._weekdaysFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this._untilPanel = new System.Windows.Forms.Panel();
+            this._buttonsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).BeginInit();
             this._badgererOptionsGroupBox.SuspendLayout();
-            this._badgererOptionsFlowLayoutPanel.SuspendLayout();
-            this._buttonsTableLayoutPanel.SuspendLayout();
+            this._overarchingTableLayout.SuspendLayout();
+            this._breakOptionsGroupBox.SuspendLayout();
+            this._breakOptionsTableLayoutPanel.SuspendLayout();
+            this._badgererOptionsTableLayoutPanel.SuspendLayout();
+            this._scheduleOptionsGroupBox.SuspendLayout();
+            this._scheduleOptionsTableLayoutPanel.SuspendLayout();
+            this._startingTimePanel.SuspendLayout();
+            this._breakRepeatPanel.SuspendLayout();
+            this._breakSchedulePanel.SuspendLayout();
+            this._weekdaysFlowLayoutPanel.SuspendLayout();
+            this._untilPanel.SuspendLayout();
+            this._buttonsFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // _flowLayoutPanel
-            // 
-            resources.ApplyResources(this._flowLayoutPanel, "_flowLayoutPanel");
-            this._flowLayoutPanel.Controls.Add(this._friendlyNameLabel);
-            this._flowLayoutPanel.Controls.Add(this._friendlyNameTextBox);
-            this._flowLayoutPanel.Controls.Add(this._breakDurationLabel);
-            this._flowLayoutPanel.Controls.Add(this._breakDurationPicker);
-            this._flowLayoutPanel.Controls.Add(this._breakIntervalLabel);
-            this._flowLayoutPanel.Controls.Add(this._breakIntervalPicker);
-            this._flowLayoutPanel.Controls.Add(this._startingTimeLabel);
-            this._flowLayoutPanel.Controls.Add(this._startingTypeDropDown);
-            this._flowLayoutPanel.Controls.Add(this._startingTimeAfterHourPicker);
-            this._flowLayoutPanel.Controls.Add(this._startingSpecificTimePicker);
-            this._flowLayoutPanel.Controls.Add(this._breakRepeatLabel);
-            this._flowLayoutPanel.Controls.Add(this._repeatDurationDropDown);
-            this._flowLayoutPanel.Controls.Add(this._repeatSpecificTimePicker);
-            this._flowLayoutPanel.Controls.Add(this._repeatCertainDurationPicker);
-            this._flowLayoutPanel.Controls.Add(this._repeatSpecificNumberOfTimesPicker);
-            this._flowLayoutPanel.Controls.Add(this._breakScheduleLabel);
-            this._flowLayoutPanel.Controls.Add(this._breakScheduleDropDown);
-            this._flowLayoutPanel.Controls.Add(this._everyNumberOfDaysPicker);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxSunday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxMonday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxTuesday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxWednesday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxThursday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxFriday);
-            this._flowLayoutPanel.Controls.Add(this._checkBoxSaturday);
-            this._flowLayoutPanel.Controls.Add(this._breakScheduleUntilLabel);
-            this._flowLayoutPanel.Controls.Add(this._breakUntilDropDown);
-            this._flowLayoutPanel.Controls.Add(this._breakUntilSpecificTimePicker);
-            this._flowLayoutPanel.Controls.Add(this._breakUntilSpecificDurationPicker);
-            this._flowLayoutPanel.Name = "_flowLayoutPanel";
             // 
             // _friendlyNameLabel
             // 
@@ -117,7 +101,6 @@
             // 
             // _friendlyNameTextBox
             // 
-            this._flowLayoutPanel.SetFlowBreak(this._friendlyNameTextBox, true);
             resources.ApplyResources(this._friendlyNameTextBox, "_friendlyNameTextBox");
             this._friendlyNameTextBox.Name = "_friendlyNameTextBox";
             // 
@@ -128,14 +111,13 @@
             // 
             // _breakDurationPicker
             // 
-            this._flowLayoutPanel.SetFlowBreak(this._breakDurationPicker, true);
+            resources.ApplyResources(this._breakDurationPicker, "_breakDurationPicker");
             this._breakDurationPicker.Items.AddRange(new System.TimeSpan2[] {
             new System.TimeSpan2(0, 0, 5, 0),
             new System.TimeSpan2(0, 0, 10, 0),
             new System.TimeSpan2(0, 0, 15, 0),
             new System.TimeSpan2(0, 0, 30, 0),
             new System.TimeSpan2(0, 1, 0, 0)});
-            resources.ApplyResources(this._breakDurationPicker, "_breakDurationPicker");
             this._breakDurationPicker.Name = "_breakDurationPicker";
             this._breakDurationPicker.Value = new System.TimeSpan2(0, 0, 5, 0);
             // 
@@ -146,14 +128,13 @@
             // 
             // _breakIntervalPicker
             // 
-            this._flowLayoutPanel.SetFlowBreak(this._breakIntervalPicker, true);
+            resources.ApplyResources(this._breakIntervalPicker, "_breakIntervalPicker");
             this._breakIntervalPicker.Items.AddRange(new System.TimeSpan2[] {
             new System.TimeSpan2(0, 1, 0, 0),
             new System.TimeSpan2(0, 0, 30, 0),
             new System.TimeSpan2(0, 2, 0, 0),
             new System.TimeSpan2(0, 3, 0, 0),
             new System.TimeSpan2(0, 4, 0, 0)});
-            resources.ApplyResources(this._breakIntervalPicker, "_breakIntervalPicker");
             this._breakIntervalPicker.Name = "_breakIntervalPicker";
             this._breakIntervalPicker.Value = new System.TimeSpan2(0, 1, 0, 0);
             // 
@@ -164,15 +145,14 @@
             // 
             // _startingTypeDropDown
             // 
+            resources.ApplyResources(this._startingTypeDropDown, "_startingTypeDropDown");
             this._startingTypeDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._startingTypeDropDown.FormattingEnabled = true;
-            resources.ApplyResources(this._startingTypeDropDown, "_startingTypeDropDown");
             this._startingTypeDropDown.Name = "_startingTypeDropDown";
             // 
             // _startingTimeAfterHourPicker
             // 
             resources.ApplyResources(this._startingTimeAfterHourPicker, "_startingTimeAfterHourPicker");
-            this._flowLayoutPanel.SetFlowBreak(this._startingTimeAfterHourPicker, true);
             this._startingTimeAfterHourPicker.Maximum = new decimal(new int[] {
             59,
             0,
@@ -188,7 +168,6 @@
             // _startingSpecificTimePicker
             // 
             resources.ApplyResources(this._startingSpecificTimePicker, "_startingSpecificTimePicker");
-            this._flowLayoutPanel.SetFlowBreak(this._startingSpecificTimePicker, true);
             this._startingSpecificTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this._startingSpecificTimePicker.Name = "_startingSpecificTimePicker";
             this._startingSpecificTimePicker.ShowUpDown = true;
@@ -200,15 +179,14 @@
             // 
             // _repeatDurationDropDown
             // 
+            resources.ApplyResources(this._repeatDurationDropDown, "_repeatDurationDropDown");
             this._repeatDurationDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._repeatDurationDropDown.FormattingEnabled = true;
-            resources.ApplyResources(this._repeatDurationDropDown, "_repeatDurationDropDown");
             this._repeatDurationDropDown.Name = "_repeatDurationDropDown";
             // 
             // _repeatSpecificTimePicker
             // 
             resources.ApplyResources(this._repeatSpecificTimePicker, "_repeatSpecificTimePicker");
-            this._flowLayoutPanel.SetFlowBreak(this._repeatSpecificTimePicker, true);
             this._repeatSpecificTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this._repeatSpecificTimePicker.Name = "_repeatSpecificTimePicker";
             this._repeatSpecificTimePicker.ShowUpDown = true;
@@ -216,7 +194,6 @@
             // _repeatCertainDurationPicker
             // 
             resources.ApplyResources(this._repeatCertainDurationPicker, "_repeatCertainDurationPicker");
-            this._flowLayoutPanel.SetFlowBreak(this._repeatCertainDurationPicker, true);
             this._repeatCertainDurationPicker.Items.AddRange(new System.TimeSpan2[] {
             new System.TimeSpan2(2, 0, 0, 0),
             new System.TimeSpan2(3, 0, 0, 0),
@@ -231,7 +208,6 @@
             // _repeatSpecificNumberOfTimesPicker
             // 
             resources.ApplyResources(this._repeatSpecificNumberOfTimesPicker, "_repeatSpecificNumberOfTimesPicker");
-            this._flowLayoutPanel.SetFlowBreak(this._repeatSpecificNumberOfTimesPicker, true);
             this._repeatSpecificNumberOfTimesPicker.Minimum = new decimal(new int[] {
             1,
             0,
@@ -251,15 +227,14 @@
             // 
             // _breakScheduleDropDown
             // 
+            resources.ApplyResources(this._breakScheduleDropDown, "_breakScheduleDropDown");
             this._breakScheduleDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._breakScheduleDropDown.FormattingEnabled = true;
-            resources.ApplyResources(this._breakScheduleDropDown, "_breakScheduleDropDown");
             this._breakScheduleDropDown.Name = "_breakScheduleDropDown";
             // 
             // _everyNumberOfDaysPicker
             // 
             resources.ApplyResources(this._everyNumberOfDaysPicker, "_everyNumberOfDaysPicker");
-            this._flowLayoutPanel.SetFlowBreak(this._everyNumberOfDaysPicker, true);
             this._everyNumberOfDaysPicker.Maximum = new decimal(new int[] {
             366,
             0,
@@ -316,7 +291,6 @@
             // _checkBoxSaturday
             // 
             resources.ApplyResources(this._checkBoxSaturday, "_checkBoxSaturday");
-            this._flowLayoutPanel.SetFlowBreak(this._checkBoxSaturday, true);
             this._checkBoxSaturday.Name = "_checkBoxSaturday";
             this._checkBoxSaturday.UseVisualStyleBackColor = true;
             // 
@@ -327,15 +301,14 @@
             // 
             // _breakUntilDropDown
             // 
-            this._breakUntilDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this._breakUntilDropDown, "_breakUntilDropDown");
+            this._breakUntilDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._breakUntilDropDown.FormattingEnabled = true;
             this._breakUntilDropDown.Name = "_breakUntilDropDown";
             // 
             // _breakUntilSpecificTimePicker
             // 
             resources.ApplyResources(this._breakUntilSpecificTimePicker, "_breakUntilSpecificTimePicker");
-            this._flowLayoutPanel.SetFlowBreak(this._breakUntilSpecificTimePicker, true);
             this._breakUntilSpecificTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this._breakUntilSpecificTimePicker.Name = "_breakUntilSpecificTimePicker";
             this._breakUntilSpecificTimePicker.ShowUpDown = true;
@@ -343,7 +316,6 @@
             // _breakUntilSpecificDurationPicker
             // 
             resources.ApplyResources(this._breakUntilSpecificDurationPicker, "_breakUntilSpecificDurationPicker");
-            this._flowLayoutPanel.SetFlowBreak(this._breakUntilSpecificDurationPicker, true);
             this._breakUntilSpecificDurationPicker.Items.AddRange(new System.TimeSpan2[] {
             new System.TimeSpan2(7, 0, 0, 0),
             new System.TimeSpan2(14, 0, 0, 0),
@@ -354,17 +326,10 @@
             // _badgererOptionsGroupBox
             // 
             resources.ApplyResources(this._badgererOptionsGroupBox, "_badgererOptionsGroupBox");
-            this._badgererOptionsGroupBox.Controls.Add(this._badgererOptionsFlowLayoutPanel);
+            this._overarchingTableLayout.SetColumnSpan(this._badgererOptionsGroupBox, 2);
+            this._badgererOptionsGroupBox.Controls.Add(this._badgererOptionsTableLayoutPanel);
             this._badgererOptionsGroupBox.Name = "_badgererOptionsGroupBox";
             this._badgererOptionsGroupBox.TabStop = false;
-            // 
-            // _badgererOptionsFlowLayoutPanel
-            // 
-            resources.ApplyResources(this._badgererOptionsFlowLayoutPanel, "_badgererOptionsFlowLayoutPanel");
-            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._lockScreenCheckBox);
-            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._badgererDisplayLabel);
-            this._badgererOptionsFlowLayoutPanel.Controls.Add(this._badgererDisplayDropDown);
-            this._badgererOptionsFlowLayoutPanel.Name = "_badgererOptionsFlowLayoutPanel";
             // 
             // _lockScreenCheckBox
             // 
@@ -381,21 +346,15 @@
             // 
             // _badgererDisplayDropDown
             // 
+            resources.ApplyResources(this._badgererDisplayDropDown, "_badgererDisplayDropDown");
             this._badgererDisplayDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._badgererDisplayDropDown.FormattingEnabled = true;
-            resources.ApplyResources(this._badgererDisplayDropDown, "_badgererDisplayDropDown");
             this._badgererDisplayDropDown.Name = "_badgererDisplayDropDown";
-            // 
-            // _buttonsTableLayoutPanel
-            // 
-            resources.ApplyResources(this._buttonsTableLayoutPanel, "_buttonsTableLayoutPanel");
-            this._buttonsTableLayoutPanel.Controls.Add(this._cancelButton, 1, 0);
-            this._buttonsTableLayoutPanel.Controls.Add(this._okButton, 0, 0);
-            this._buttonsTableLayoutPanel.Name = "_buttonsTableLayoutPanel";
             // 
             // _cancelButton
             // 
             resources.ApplyResources(this._cancelButton, "_cancelButton");
+            this._cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this._cancelButton.Name = "_cancelButton";
             this._cancelButton.UseVisualStyleBackColor = true;
             // 
@@ -405,26 +364,153 @@
             this._okButton.Name = "_okButton";
             this._okButton.UseVisualStyleBackColor = true;
             // 
+            // _overarchingTableLayout
+            // 
+            resources.ApplyResources(this._overarchingTableLayout, "_overarchingTableLayout");
+            this._overarchingTableLayout.Controls.Add(this._badgererOptionsGroupBox, 0, 2);
+            this._overarchingTableLayout.Controls.Add(this._friendlyNameLabel, 0, 0);
+            this._overarchingTableLayout.Controls.Add(this._friendlyNameTextBox, 1, 0);
+            this._overarchingTableLayout.Controls.Add(this._breakOptionsGroupBox, 0, 1);
+            this._overarchingTableLayout.Controls.Add(this._scheduleOptionsGroupBox, 0, 3);
+            this._overarchingTableLayout.Controls.Add(this._buttonsFlowLayoutPanel, 0, 4);
+            this._overarchingTableLayout.Name = "_overarchingTableLayout";
+            // 
+            // _breakOptionsGroupBox
+            // 
+            resources.ApplyResources(this._breakOptionsGroupBox, "_breakOptionsGroupBox");
+            this._overarchingTableLayout.SetColumnSpan(this._breakOptionsGroupBox, 2);
+            this._breakOptionsGroupBox.Controls.Add(this._breakOptionsTableLayoutPanel);
+            this._breakOptionsGroupBox.Name = "_breakOptionsGroupBox";
+            this._breakOptionsGroupBox.TabStop = false;
+            // 
+            // _breakOptionsTableLayoutPanel
+            // 
+            resources.ApplyResources(this._breakOptionsTableLayoutPanel, "_breakOptionsTableLayoutPanel");
+            this._breakOptionsTableLayoutPanel.Controls.Add(this._breakIntervalLabel, 0, 1);
+            this._breakOptionsTableLayoutPanel.Controls.Add(this._breakDurationLabel, 0, 0);
+            this._breakOptionsTableLayoutPanel.Controls.Add(this._breakDurationPicker, 1, 0);
+            this._breakOptionsTableLayoutPanel.Controls.Add(this._breakIntervalPicker, 1, 1);
+            this._breakOptionsTableLayoutPanel.Name = "_breakOptionsTableLayoutPanel";
+            // 
+            // _badgererOptionsTableLayoutPanel
+            // 
+            resources.ApplyResources(this._badgererOptionsTableLayoutPanel, "_badgererOptionsTableLayoutPanel");
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayDropDown, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayLabel, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._lockScreenCheckBox, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Name = "_badgererOptionsTableLayoutPanel";
+            // 
+            // _scheduleOptionsGroupBox
+            // 
+            resources.ApplyResources(this._scheduleOptionsGroupBox, "_scheduleOptionsGroupBox");
+            this._overarchingTableLayout.SetColumnSpan(this._scheduleOptionsGroupBox, 2);
+            this._scheduleOptionsGroupBox.Controls.Add(this._scheduleOptionsTableLayoutPanel);
+            this._scheduleOptionsGroupBox.Name = "_scheduleOptionsGroupBox";
+            this._scheduleOptionsGroupBox.TabStop = false;
+            // 
+            // _scheduleOptionsTableLayoutPanel
+            // 
+            resources.ApplyResources(this._scheduleOptionsTableLayoutPanel, "_scheduleOptionsTableLayoutPanel");
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakUntilDropDown, 1, 4);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakScheduleUntilLabel, 0, 4);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakScheduleDropDown, 1, 2);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakScheduleLabel, 0, 2);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._repeatDurationDropDown, 1, 1);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakRepeatLabel, 0, 1);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._startingTimeLabel, 0, 0);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._startingTypeDropDown, 1, 0);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._startingTimePanel, 2, 0);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakRepeatPanel, 2, 1);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._breakSchedulePanel, 2, 2);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._weekdaysFlowLayoutPanel, 0, 3);
+            this._scheduleOptionsTableLayoutPanel.Controls.Add(this._untilPanel, 2, 4);
+            this._scheduleOptionsTableLayoutPanel.Name = "_scheduleOptionsTableLayoutPanel";
+            // 
+            // _startingTimePanel
+            // 
+            resources.ApplyResources(this._startingTimePanel, "_startingTimePanel");
+            this._startingTimePanel.Controls.Add(this._startingSpecificTimePicker);
+            this._startingTimePanel.Controls.Add(this._startingTimeAfterHourPicker);
+            this._startingTimePanel.Name = "_startingTimePanel";
+            // 
+            // _breakRepeatPanel
+            // 
+            resources.ApplyResources(this._breakRepeatPanel, "_breakRepeatPanel");
+            this._breakRepeatPanel.Controls.Add(this._repeatSpecificNumberOfTimesPicker);
+            this._breakRepeatPanel.Controls.Add(this._repeatCertainDurationPicker);
+            this._breakRepeatPanel.Controls.Add(this._repeatSpecificTimePicker);
+            this._breakRepeatPanel.Name = "_breakRepeatPanel";
+            // 
+            // _breakSchedulePanel
+            // 
+            resources.ApplyResources(this._breakSchedulePanel, "_breakSchedulePanel");
+            this._breakSchedulePanel.Controls.Add(this._everyNumberOfDaysPicker);
+            this._breakSchedulePanel.Name = "_breakSchedulePanel";
+            // 
+            // _weekdaysFlowLayoutPanel
+            // 
+            resources.ApplyResources(this._weekdaysFlowLayoutPanel, "_weekdaysFlowLayoutPanel");
+            this._scheduleOptionsTableLayoutPanel.SetColumnSpan(this._weekdaysFlowLayoutPanel, 3);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxSunday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxMonday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxTuesday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxWednesday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxThursday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxFriday);
+            this._weekdaysFlowLayoutPanel.Controls.Add(this._checkBoxSaturday);
+            this._weekdaysFlowLayoutPanel.Name = "_weekdaysFlowLayoutPanel";
+            // 
+            // _untilPanel
+            // 
+            resources.ApplyResources(this._untilPanel, "_untilPanel");
+            this._untilPanel.Controls.Add(this._breakUntilSpecificDurationPicker);
+            this._untilPanel.Controls.Add(this._breakUntilSpecificTimePicker);
+            this._untilPanel.Name = "_untilPanel";
+            // 
+            // _buttonsFlowLayoutPanel
+            // 
+            resources.ApplyResources(this._buttonsFlowLayoutPanel, "_buttonsFlowLayoutPanel");
+            this._overarchingTableLayout.SetColumnSpan(this._buttonsFlowLayoutPanel, 2);
+            this._buttonsFlowLayoutPanel.Controls.Add(this._cancelButton);
+            this._buttonsFlowLayoutPanel.Controls.Add(this._okButton);
+            this._buttonsFlowLayoutPanel.Name = "_buttonsFlowLayoutPanel";
+            // 
             // BreakForm
             // 
+            this.AcceptButton = this._okButton;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this._flowLayoutPanel);
-            this.Controls.Add(this._badgererOptionsGroupBox);
-            this.Controls.Add(this._buttonsTableLayoutPanel);
+            this.CancelButton = this._cancelButton;
+            this.Controls.Add(this._overarchingTableLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BreakForm";
-            this._flowLayoutPanel.ResumeLayout(false);
-            this._flowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._startingTimeAfterHourPicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).EndInit();
             this._badgererOptionsGroupBox.ResumeLayout(false);
             this._badgererOptionsGroupBox.PerformLayout();
-            this._badgererOptionsFlowLayoutPanel.ResumeLayout(false);
-            this._badgererOptionsFlowLayoutPanel.PerformLayout();
-            this._buttonsTableLayoutPanel.ResumeLayout(false);
-            this._buttonsTableLayoutPanel.PerformLayout();
+            this._overarchingTableLayout.ResumeLayout(false);
+            this._overarchingTableLayout.PerformLayout();
+            this._breakOptionsGroupBox.ResumeLayout(false);
+            this._breakOptionsGroupBox.PerformLayout();
+            this._breakOptionsTableLayoutPanel.ResumeLayout(false);
+            this._breakOptionsTableLayoutPanel.PerformLayout();
+            this._badgererOptionsTableLayoutPanel.ResumeLayout(false);
+            this._badgererOptionsTableLayoutPanel.PerformLayout();
+            this._scheduleOptionsGroupBox.ResumeLayout(false);
+            this._scheduleOptionsGroupBox.PerformLayout();
+            this._scheduleOptionsTableLayoutPanel.ResumeLayout(false);
+            this._scheduleOptionsTableLayoutPanel.PerformLayout();
+            this._startingTimePanel.ResumeLayout(false);
+            this._breakRepeatPanel.ResumeLayout(false);
+            this._breakSchedulePanel.ResumeLayout(false);
+            this._weekdaysFlowLayoutPanel.ResumeLayout(false);
+            this._weekdaysFlowLayoutPanel.PerformLayout();
+            this._untilPanel.ResumeLayout(false);
+            this._buttonsFlowLayoutPanel.ResumeLayout(false);
+            this._buttonsFlowLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,7 +518,6 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel _flowLayoutPanel;
         private System.Windows.Forms.Label _breakDurationLabel;
         private System.Windows.Forms.TimeSpanPicker _breakDurationPicker;
         private System.Windows.Forms.Label _breakIntervalLabel;
@@ -461,14 +546,24 @@
         private System.Windows.Forms.DateTimePicker _breakUntilSpecificTimePicker;
         private System.Windows.Forms.TimeSpanPicker _breakUntilSpecificDurationPicker;
         private System.Windows.Forms.GroupBox _badgererOptionsGroupBox;
-        private System.Windows.Forms.FlowLayoutPanel _badgererOptionsFlowLayoutPanel;
         private System.Windows.Forms.CheckBox _lockScreenCheckBox;
         private System.Windows.Forms.Label _badgererDisplayLabel;
         private System.Windows.Forms.ComboBox _badgererDisplayDropDown;
-        private System.Windows.Forms.TableLayoutPanel _buttonsTableLayoutPanel;
         private System.Windows.Forms.Button _okButton;
         private System.Windows.Forms.Button _cancelButton;
         private System.Windows.Forms.Label _friendlyNameLabel;
         private System.Windows.Forms.TextBox _friendlyNameTextBox;
+        private System.Windows.Forms.TableLayoutPanel _overarchingTableLayout;
+        private System.Windows.Forms.GroupBox _breakOptionsGroupBox;
+        private System.Windows.Forms.TableLayoutPanel _breakOptionsTableLayoutPanel;
+        private System.Windows.Forms.GroupBox _scheduleOptionsGroupBox;
+        private System.Windows.Forms.TableLayoutPanel _scheduleOptionsTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel _badgererOptionsTableLayoutPanel;
+        private System.Windows.Forms.Panel _startingTimePanel;
+        private System.Windows.Forms.Panel _breakRepeatPanel;
+        private System.Windows.Forms.Panel _breakSchedulePanel;
+        private System.Windows.Forms.FlowLayoutPanel _weekdaysFlowLayoutPanel;
+        private System.Windows.Forms.Panel _untilPanel;
+        private System.Windows.Forms.FlowLayoutPanel _buttonsFlowLayoutPanel;
     }
 }

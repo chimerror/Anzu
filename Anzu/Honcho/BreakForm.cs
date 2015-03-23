@@ -103,7 +103,6 @@ namespace Honcho
         {
             _startingTimeAfterHourPicker.HideAndDisable();
             _startingSpecificTimePicker.HideAndDisable();
-            _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, false);
 
             var currentValue = (StartingType)_startingTypeDropDown.SelectedValue;
             switch (currentValue)
@@ -117,7 +116,6 @@ namespace Honcho
                     break;
 
                 default:
-                    _flowLayoutPanel.SetFlowBreak(_startingTypeDropDown, true);
                     break;
             }
         }
@@ -127,7 +125,6 @@ namespace Honcho
             _repeatSpecificTimePicker.HideAndDisable();
             _repeatCertainDurationPicker.HideAndDisable();
             _repeatSpecificNumberOfTimesPicker.HideAndDisable();
-            _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, false);
 
             var currentValue = (RepeatType)_repeatDurationDropDown.SelectedValue;
             switch (currentValue)
@@ -145,7 +142,6 @@ namespace Honcho
                     break;
 
                 default:
-                    _flowLayoutPanel.SetFlowBreak(_repeatDurationDropDown, true);
                     break;
             }
         }
@@ -161,14 +157,12 @@ namespace Honcho
             _checkBoxThursday.HideAndDisable();
             _checkBoxFriday.HideAndDisable();
             _checkBoxSaturday.HideAndDisable();
-            _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, true);
 
             var currentType = (ScheduleType)_breakScheduleDropDown.SelectedValue;
             switch (currentType)
             {
                 case ScheduleType.EveryNumberOfDays:
                     _everyNumberOfDaysPicker.ShowAndEnable();
-                    _flowLayoutPanel.SetFlowBreak(_breakScheduleDropDown, false);
                     break;
 
                 case ScheduleType.OnCertainDaysOfTheWeek:
@@ -206,7 +200,6 @@ namespace Honcho
 
             _breakUntilSpecificTimePicker.HideAndDisable();
             _breakUntilSpecificDurationPicker.HideAndDisable();
-            _flowLayoutPanel.SetFlowBreak(_breakUntilDropDown, false);
 
             var currentType = (UntilType)_breakUntilDropDown.SelectedValue;
             switch (currentType)
@@ -220,7 +213,6 @@ namespace Honcho
                     break;
 
                 default:
-                    _flowLayoutPanel.SetFlowBreak(_breakUntilDropDown, true);
                     break;
             }
         }
