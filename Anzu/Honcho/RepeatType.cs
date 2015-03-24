@@ -27,7 +27,7 @@ namespace Honcho
 
                 case RepeatType.UntilSpecificTime:
                     return Properties.Resources.RepeatAmountUntilSpecificTimeText;
-                
+
                 case RepeatType.UntilCertainDuration:
                     return Properties.Resources.RepeatAmountUntilCertainDurationText;
 

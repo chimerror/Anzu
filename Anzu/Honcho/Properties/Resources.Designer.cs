@@ -61,7 +61,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to When taking a break:.
+        ///   Looks up a localized string similar to When Taking a Break:.
         /// </summary>
         internal static string BadgererDisplayOptionsGroupBoxText {
             get {
@@ -106,7 +106,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Take a break for.
+        ///   Looks up a localized string similar to Take a Break for.
         /// </summary>
         internal static string BreakDurationLabelText {
             get {
@@ -115,7 +115,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to every.
+        ///   Looks up a localized string similar to Take a Break Every.
         /// </summary>
         internal static string BreakIntervalLabelText {
             get {
@@ -124,7 +124,16 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to repeat break(s).
+        ///   Looks up a localized string similar to Break Length and Interval:.
+        /// </summary>
+        internal static string BreakOptionsGroupBoxText {
+            get {
+                return ResourceManager.GetString("BreakOptionsGroupBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep Taking Breaks.
         /// </summary>
         internal static string BreakRepeatLabelText {
             get {
@@ -160,7 +169,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to schedule break(s).
+        ///   Looks up a localized string similar to Schedule Breaks to Happen.
         /// </summary>
         internal static string BreakScheduleLabelText {
             get {
@@ -178,7 +187,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to starting.
+        ///   Looks up a localized string similar to Start Taking Breaks.
         /// </summary>
         internal static string BreakStartLabelText {
             get {
@@ -196,7 +205,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to until.
+        ///   Looks up a localized string similar to Keep Scheduling Breaks Until.
         /// </summary>
         internal static string BreakUntilLabelText {
             get {
@@ -305,7 +314,7 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to not at all..
+        ///   Looks up a localized string similar to only once..
         /// </summary>
         internal static string RepeatAmountOnceText {
             get {
@@ -350,20 +359,11 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to after the screen is locked..
+        ///   Looks up a localized string similar to Scheduling Options:.
         /// </summary>
-        internal static string StartingTimeAfterScreenLockText {
+        internal static string ScheduleOptionsGroupBoxText {
             get {
-                return ResourceManager.GetString("StartingTimeAfterScreenLockText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to after the screen is unlocked..
-        /// </summary>
-        internal static string StartingTimeAfterScreenUnlockText {
-            get {
-                return ResourceManager.GetString("StartingTimeAfterScreenUnlockText", resourceCulture);
+                return ResourceManager.GetString("ScheduleOptionsGroupBoxText", resourceCulture);
             }
         }
         

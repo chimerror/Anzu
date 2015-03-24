@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15082.0513" build-num="15082">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15083.0325" build-num="15083">
     <header>
       <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
     </header>
     <body>
       <group id="Resx">
         <trans-unit id="Resx/BadgererDisplayOptionsGroupBoxText" translate="yes" xml:space="preserve">
-          <source>When taking a break:</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[3733D][!!_Ŵħèй ţàķįηğ â ъŗêãķ:_!!!!!!]</target>
+          <source>When Taking a Break:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[3733D][!!_Ŵћęй Ţáĸìйġ ã Βŕęâк:_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown on the group box containing items concerning the display of the Badgerer program when taking a break.</note>
           </trans-unit>
         <trans-unit id="Resx/BadgererWindowDisplayLabel" translate="yes" xml:space="preserve">
@@ -32,19 +32,24 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown for the Badgerer overlay window mode.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakDurationLabelText" translate="yes" xml:space="preserve">
-          <source>Take a break for</source>
-          <target state="translated" state-qualifier="mt-suggestion">[28338][!!_Τâķé â вŗęãќ ƒõѓ_!!!!]</target>
+          <source>Take a Break for</source>
+          <target state="translated">[28338][!!_Ţáĸê â ßřêáķ ƒòѓ_!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break duration drop down.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakRepeatLabelText" translate="yes" xml:space="preserve">
-          <source>repeat break(s)</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[28ADE][!!_ŗêþêãţ вřéàĸ(š)_!!!!]</target>
+          <source>Keep Taking Breaks</source>
+          <target state="translated">[28ADE][!!_Кéèр Ţãķîήĝ Βѓèáĸś_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break repeat type drop down.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakIntervalLabelText" translate="yes" xml:space="preserve">
-          <source>every</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[25857][!!_èνêŗў_!!]</target>
+          <source>Take a Break Every</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[25857][!!_Τâќè à βŗęàĸ ÉνêŗУ_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break interval drop down.</note>
+          </trans-unit>
+        <trans-unit id="Resx/BreakOptionsGroupBoxText" translate="yes" xml:space="preserve">
+          <source>Break Length and Interval:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[3A06B][!!_βŕęâќ Ĺéиĝтħ áйð Ìйтęŕνàļ:_!!!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the group box containing the break length and interval settings.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleDailyText" translate="yes" xml:space="preserve">
           <source>daily:</source>
@@ -57,8 +62,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling on certain days of the week.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakStartLabelText" translate="yes" xml:space="preserve">
-          <source>starting</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[38A8B][!!_šťâŕţîиġ_!!]</target>
+          <source>Start Taking Breaks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[38A8B][!!_Ŝтâŗť Ţâķíиġ Вřéàќŝ_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break starting time drop down.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakUntilSpecificTimeText" translate="yes" xml:space="preserve">
@@ -77,8 +82,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling breaks that will end when the specific duration has passed.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakUntilLabelText" translate="yes" xml:space="preserve">
-          <source>until</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DA064][!!_ùиτîļ_!!]</target>
+          <source>Keep Scheduling Breaks Until</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DA064][!!_Ќęéр Ŝčћéđùļîήġ Вѓèãќş Ùитįł_!!!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown on the label for the drop down that controls how long a schedule should continue.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakUntilIndefinitelyText" translate="yes" xml:space="preserve">
@@ -92,8 +97,8 @@
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when scheduling indefinitely</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleLabelText" translate="yes" xml:space="preserve">
-          <source>schedule break(s)</source>
-          <target state="translated">[DCC32][!!_ŝĉђęđúľé ъřéáк(ś)_!!!!!!]</target>
+          <source>Schedule Breaks to Happen</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DCC32][!!_Şćћèðûłę Ьѓęáќś ţò Ĥáρρèη_!!!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown before the break schedule type drop down.</note>
           </trans-unit>
         <trans-unit id="Resx/BreakScheduleEveryNumberOfDaysText" translate="yes" xml:space="preserve">
@@ -141,14 +146,19 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[8FB96][!!_Ŝĉĥęďµľé Ñęŵ Βřèáќ_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown on the dialog to schedule a new break.</note>
           </trans-unit>
+        <trans-unit id="Resx/ScheduleOptionsGroupBoxText" translate="yes" xml:space="preserve">
+          <source>Scheduling Options:</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[DAF13][!!_Šċħêðµĺìηĝ Õþтíõйş:_!!!!!!]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the group box containing the scheduling options.</note>
+          </trans-unit>
         <trans-unit id="Resx/RepeatAmountUntilCertainDurationText" translate="yes" xml:space="preserve">
           <source>for a certain duration:</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[8BDB3][!!_ƒóŗ â ĉęѓťàįи ďúŕáťîôη:_!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating for a certain duration.</note>
           </trans-unit>
         <trans-unit id="Resx/RepeatAmountOnceText" translate="yes" xml:space="preserve">
-          <source>not at all.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D092C][!!_иóť âţ àłļ._!!]</target>
+          <source>only once.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[D092C][!!_ôйļŷ òήćę._!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating once.</note>
           </trans-unit>
         <trans-unit id="Resx/RepeatAmountIndefinitelyText" translate="yes" xml:space="preserve">
@@ -175,16 +185,6 @@
           <source>after the hour at: </source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[5A0F5][!!_áƒţéѓ ťħè ĥôµř áт: _!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting at a time after the hour.</note>
-          </trans-unit>
-        <trans-unit id="Resx/StartingTimeAfterScreenUnlockText" translate="yes" xml:space="preserve">
-          <source>after the screen is unlocked.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[61121][!!_àƒτèř ťнę şćŗęèη íş úиľòĉќêď._!!!!!!!!]</target>
-          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is unlocked.</note>
-          </trans-unit>
-        <trans-unit id="Resx/StartingTimeAfterScreenLockText" translate="yes" xml:space="preserve">
-          <source>after the screen is locked.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">[C78AF][!!_âƒťęř τнé şċŕèęή įś ľôčĸèð._!!!!!!!!]</target>
-          <note from="MultilingualBuild" annotates="source" priority="2">Shown when starting when the screen is locked.</note>
           </trans-unit>
       </group>
     </body>

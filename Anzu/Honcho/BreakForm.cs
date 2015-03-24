@@ -35,10 +35,26 @@ namespace Honcho
             base.OnLoad(e);
 
             _friendlyNameLabel.Text = Properties.Resources.FriendlyNameLabelText;
-            _breakDurationLabel.Text = Properties.Resources.BreakDurationLabelText;
-            _breakIntervalLabel.Text = Properties.Resources.BreakIntervalLabelText;
+            _friendlyNameLabel.SetMinimumWidth();
 
+            _breakOptionsGroupBox.Text = Properties.Resources.BreakOptionsGroupBoxText;
+            _breakDurationLabel.Text = Properties.Resources.BreakDurationLabelText;
+            _breakDurationLabel.SetMinimumWidth();
+            _breakIntervalLabel.Text = Properties.Resources.BreakIntervalLabelText;
+            _breakIntervalLabel.SetMinimumWidth();
+
+            _badgererOptionsGroupBox.Text = Properties.Resources.BadgererDisplayOptionsGroupBoxText;
+
+            _lockScreenCheckBox.Text = Properties.Resources.LockScreenCheckboxText;
+
+            _badgererDisplayLabel.Text = Properties.Resources.BadgererWindowDisplayLabel;
+            _badgererDisplayDropDown.SetComboBoxToEnum<BadgererWindowType>(
+                bwt => bwt.GetFriendlyName(),
+                null);
+
+            _scheduleOptionsGroupBox.Text = Properties.Resources.ScheduleOptionsGroupBoxText;
             _startingTimeLabel.Text = Properties.Resources.BreakStartLabelText;
+            _startingTimeLabel.SetMinimumWidth();
             _startingTypeDropDown.SetComboBoxToEnum<StartingType>(
                 st => st.GetFriendlyName(),
                 StartingTypeDropDown_SelectedValueChanged);
@@ -47,6 +63,7 @@ namespace Honcho
             _startingSpecificTimePicker.Value = DateTime.Now;
 
             _breakRepeatLabel.Text = Properties.Resources.BreakRepeatLabelText;
+            _breakRepeatLabel.SetMinimumWidth();
             _repeatDurationDropDown.SetComboBoxToEnum<RepeatType>(
                 rt => rt.GetFriendlyName(),
                 RepeatTypeDropDown_SelectedValueChanged);
@@ -56,6 +73,7 @@ namespace Honcho
                 _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
 
             _breakScheduleLabel.Text = Properties.Resources.BreakScheduleLabelText;
+            _breakScheduleLabel.SetMinimumWidth();
             _breakScheduleDropDown.SetComboBoxToEnum<ScheduleType>(
                 st => st.GetFriendlyName(),
                 ScheduleTypeDropDown_SelectedValueChanged);
@@ -76,6 +94,7 @@ namespace Honcho
                 CultureInfo.CurrentUICulture.DateTimeFormat.GetDayName(DayOfWeek.Saturday);
 
             _breakScheduleUntilLabel.Text = Properties.Resources.BreakUntilLabelText;
+            _breakScheduleUntilLabel.SetMinimumWidth();
             _breakUntilDropDown.SetComboBoxToEnum<UntilType>(
                 ut => ut.GetFriendlyName(),
                 UntilDropDown_SelectedValueChanged);
@@ -83,15 +102,6 @@ namespace Honcho
             _breakUntilSpecificTimePicker.CustomFormat = _dateTimePickerFormat;
             _breakUntilSpecificTimePicker.Value =
                 _startingSpecificTimePicker.Value + _breakIntervalPicker.Value;
-
-            _badgererOptionsGroupBox.Text = Properties.Resources.BadgererDisplayOptionsGroupBoxText;
-
-            _lockScreenCheckBox.Text = Properties.Resources.LockScreenCheckboxText;
-
-            _badgererDisplayLabel.Text = Properties.Resources.BadgererWindowDisplayLabel;
-            _badgererDisplayDropDown.SetComboBoxToEnum<BadgererWindowType>(
-                bwt => bwt.GetFriendlyName(),
-                null);
 
             _okButton.Text = Properties.Resources.OkButtonText;
             _okButton.Click += OkButton_Click;
@@ -125,6 +135,8 @@ namespace Honcho
             _repeatSpecificTimePicker.HideAndDisable();
             _repeatCertainDurationPicker.HideAndDisable();
             _repeatSpecificNumberOfTimesPicker.HideAndDisable();
+            HideScheduleSection();
+            HideUntilSection();
 
             var currentValue = (RepeatType)_repeatDurationDropDown.SelectedValue;
             switch (currentValue)
@@ -144,11 +156,28 @@ namespace Honcho
                 default:
                     break;
             }
+
+            if (currentValue != RepeatType.Indefinitely)
+            {
+                ShowScheduleSection();
+                ShowUntilSection();
+            }
         }
 
         private void ScheduleTypeDropDown_SelectedValueChanged(object sender, EventArgs e)
         {
-            HideUntilSection();
+            // Only update the section if it's already visible.
+            if (_breakScheduleDropDown.Visible)
+            {
+                ShowScheduleSection();
+            }
+        }
+
+        private void ShowScheduleSection()
+        {
+            _breakScheduleLabel.ShowAndEnable();
+            _breakScheduleDropDown.ShowAndEnable();
+
             _everyNumberOfDaysPicker.HideAndDisable();
             _checkBoxSunday.HideAndDisable();
             _checkBoxMonday.HideAndDisable();
@@ -175,13 +204,20 @@ namespace Honcho
                     _checkBoxSaturday.ShowAndEnable();
                     break;
             }
+        }
 
-            // Until section should be shown and enabled after other controls so it
-            // appears at the end.
-            if (currentType != ScheduleType.Indefinitely)
-            {
-                ShowUntilSection();
-            }
+        private void HideScheduleSection()
+        {
+            _breakScheduleLabel.HideAndDisable();
+            _breakScheduleDropDown.HideAndDisable();
+            _everyNumberOfDaysPicker.HideAndDisable();
+            _checkBoxSunday.HideAndDisable();
+            _checkBoxMonday.HideAndDisable();
+            _checkBoxTuesday.HideAndDisable();
+            _checkBoxWednesday.HideAndDisable();
+            _checkBoxThursday.HideAndDisable();
+            _checkBoxFriday.HideAndDisable();
+            _checkBoxSaturday.HideAndDisable();
         }
 
         private void UntilDropDown_SelectedValueChanged(object sender, EventArgs e)

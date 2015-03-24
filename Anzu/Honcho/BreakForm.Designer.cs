@@ -59,15 +59,15 @@
             this._breakUntilSpecificTimePicker = new System.Windows.Forms.DateTimePicker();
             this._breakUntilSpecificDurationPicker = new System.Windows.Forms.TimeSpanPicker();
             this._badgererOptionsGroupBox = new System.Windows.Forms.GroupBox();
-            this._lockScreenCheckBox = new System.Windows.Forms.CheckBox();
-            this._badgererDisplayLabel = new System.Windows.Forms.Label();
+            this._badgererOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this._badgererDisplayDropDown = new System.Windows.Forms.ComboBox();
+            this._badgererDisplayLabel = new System.Windows.Forms.Label();
+            this._lockScreenCheckBox = new System.Windows.Forms.CheckBox();
             this._cancelButton = new System.Windows.Forms.Button();
             this._okButton = new System.Windows.Forms.Button();
             this._overarchingTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this._breakOptionsGroupBox = new System.Windows.Forms.GroupBox();
             this._breakOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this._badgererOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this._scheduleOptionsGroupBox = new System.Windows.Forms.GroupBox();
             this._scheduleOptionsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this._startingTimePanel = new System.Windows.Forms.Panel();
@@ -80,10 +80,10 @@
             ((System.ComponentModel.ISupportInitialize)(this._repeatSpecificNumberOfTimesPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).BeginInit();
             this._badgererOptionsGroupBox.SuspendLayout();
+            this._badgererOptionsTableLayoutPanel.SuspendLayout();
             this._overarchingTableLayout.SuspendLayout();
             this._breakOptionsGroupBox.SuspendLayout();
             this._breakOptionsTableLayoutPanel.SuspendLayout();
-            this._badgererOptionsTableLayoutPanel.SuspendLayout();
             this._scheduleOptionsGroupBox.SuspendLayout();
             this._scheduleOptionsTableLayoutPanel.SuspendLayout();
             this._startingTimePanel.SuspendLayout();
@@ -331,18 +331,13 @@
             this._badgererOptionsGroupBox.Name = "_badgererOptionsGroupBox";
             this._badgererOptionsGroupBox.TabStop = false;
             // 
-            // _lockScreenCheckBox
+            // _badgererOptionsTableLayoutPanel
             // 
-            resources.ApplyResources(this._lockScreenCheckBox, "_lockScreenCheckBox");
-            this._lockScreenCheckBox.Checked = true;
-            this._lockScreenCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._lockScreenCheckBox.Name = "_lockScreenCheckBox";
-            this._lockScreenCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // _badgererDisplayLabel
-            // 
-            resources.ApplyResources(this._badgererDisplayLabel, "_badgererDisplayLabel");
-            this._badgererDisplayLabel.Name = "_badgererDisplayLabel";
+            resources.ApplyResources(this._badgererOptionsTableLayoutPanel, "_badgererOptionsTableLayoutPanel");
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayDropDown, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayLabel, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Controls.Add(this._lockScreenCheckBox, 0, 0);
+            this._badgererOptionsTableLayoutPanel.Name = "_badgererOptionsTableLayoutPanel";
             // 
             // _badgererDisplayDropDown
             // 
@@ -350,6 +345,19 @@
             this._badgererDisplayDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._badgererDisplayDropDown.FormattingEnabled = true;
             this._badgererDisplayDropDown.Name = "_badgererDisplayDropDown";
+            // 
+            // _badgererDisplayLabel
+            // 
+            resources.ApplyResources(this._badgererDisplayLabel, "_badgererDisplayLabel");
+            this._badgererDisplayLabel.Name = "_badgererDisplayLabel";
+            // 
+            // _lockScreenCheckBox
+            // 
+            resources.ApplyResources(this._lockScreenCheckBox, "_lockScreenCheckBox");
+            this._lockScreenCheckBox.Checked = true;
+            this._lockScreenCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._lockScreenCheckBox.Name = "_lockScreenCheckBox";
+            this._lockScreenCheckBox.UseVisualStyleBackColor = true;
             // 
             // _cancelButton
             // 
@@ -391,14 +399,6 @@
             this._breakOptionsTableLayoutPanel.Controls.Add(this._breakDurationPicker, 1, 0);
             this._breakOptionsTableLayoutPanel.Controls.Add(this._breakIntervalPicker, 1, 1);
             this._breakOptionsTableLayoutPanel.Name = "_breakOptionsTableLayoutPanel";
-            // 
-            // _badgererOptionsTableLayoutPanel
-            // 
-            resources.ApplyResources(this._badgererOptionsTableLayoutPanel, "_badgererOptionsTableLayoutPanel");
-            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayDropDown, 0, 0);
-            this._badgererOptionsTableLayoutPanel.Controls.Add(this._badgererDisplayLabel, 0, 0);
-            this._badgererOptionsTableLayoutPanel.Controls.Add(this._lockScreenCheckBox, 0, 0);
-            this._badgererOptionsTableLayoutPanel.Name = "_badgererOptionsTableLayoutPanel";
             // 
             // _scheduleOptionsGroupBox
             // 
@@ -491,14 +491,14 @@
             ((System.ComponentModel.ISupportInitialize)(this._everyNumberOfDaysPicker)).EndInit();
             this._badgererOptionsGroupBox.ResumeLayout(false);
             this._badgererOptionsGroupBox.PerformLayout();
+            this._badgererOptionsTableLayoutPanel.ResumeLayout(false);
+            this._badgererOptionsTableLayoutPanel.PerformLayout();
             this._overarchingTableLayout.ResumeLayout(false);
             this._overarchingTableLayout.PerformLayout();
             this._breakOptionsGroupBox.ResumeLayout(false);
             this._breakOptionsGroupBox.PerformLayout();
             this._breakOptionsTableLayoutPanel.ResumeLayout(false);
             this._breakOptionsTableLayoutPanel.PerformLayout();
-            this._badgererOptionsTableLayoutPanel.ResumeLayout(false);
-            this._badgererOptionsTableLayoutPanel.PerformLayout();
             this._scheduleOptionsGroupBox.ResumeLayout(false);
             this._scheduleOptionsGroupBox.PerformLayout();
             this._scheduleOptionsTableLayoutPanel.ResumeLayout(false);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32.TaskScheduler;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace Honcho
 {
@@ -29,7 +30,7 @@ namespace Honcho
             {
                 throw new ArgumentException("Type parameter must be an enumeration.");
             }
-            
+
             comboBox.DataSource = Enum.GetValues(typeof(T))
                 .Cast<T>()
                 .Select(v => new KeyValuePair<string, T>(displayFunction(v), v))
@@ -39,12 +40,20 @@ namespace Honcho
             comboBox.Width = ComboBoxPadding + comboBox.Items
                 .Cast<KeyValuePair<string, T>>()
                 .Max(kvp => TextRenderer.MeasureText(kvp.Key, comboBox.Font).Width);
+            comboBox.MinimumSize = new Size(comboBox.Width, comboBox.MinimumSize.Height);
 
             if (onSelectedValueChanged != null)
             {
                 comboBox.SelectedValueChanged += onSelectedValueChanged;
                 onSelectedValueChanged(new Object(), new EventArgs()); // Force an update.
             }
+        }
+
+        public static void SetMinimumWidth(this Control control)
+        {
+            control.MinimumSize = new Size(
+                TextRenderer.MeasureText(control.Text, control.Font).Width,
+                control.MinimumSize.Height);
         }
 
         public static DaysOfTheWeek ToTaskSchedulerDay(this DayOfWeek dayOfWeek)

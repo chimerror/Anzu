@@ -525,6 +525,9 @@
   <data name="&gt;&gt;_repeatCertainDurationPicker.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="_repeatSpecificNumberOfTimesPicker.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="_repeatSpecificNumberOfTimesPicker.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -901,7 +904,7 @@
     <value>False</value>
   </data>
   <data name="_breakScheduleUntilLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 127</value>
+    <value>3, 130</value>
   </data>
   <data name="_breakScheduleUntilLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
@@ -937,7 +940,7 @@
     <value>False</value>
   </data>
   <data name="_breakUntilDropDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 123</value>
+    <value>100, 126</value>
   </data>
   <data name="_breakUntilDropDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -960,11 +963,14 @@
   <data name="&gt;&gt;_breakUntilDropDown.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="_breakUntilSpecificTimePicker.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="_breakUntilSpecificTimePicker.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="_breakUntilSpecificTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 9</value>
   </data>
   <data name="_breakUntilSpecificTimePicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -987,11 +993,14 @@
   <data name="&gt;&gt;_breakUntilSpecificTimePicker.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="_breakUntilSpecificDurationPicker.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="_breakUntilSpecificDurationPicker.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="_breakUntilSpecificDurationPicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 9</value>
   </data>
   <data name="_breakUntilSpecificDurationPicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -1152,6 +1161,9 @@
   <data name="_breakSchedulePanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 62</value>
   </data>
+  <data name="_breakSchedulePanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 20</value>
+  </data>
   <data name="_breakSchedulePanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>318, 23</value>
   </data>
@@ -1213,7 +1225,7 @@
     <value>0, 20</value>
   </data>
   <data name="_untilPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 27</value>
+    <value>318, 33</value>
   </data>
   <data name="_untilPanel.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1243,7 +1255,7 @@
     <value>5</value>
   </data>
   <data name="_scheduleOptionsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 150</value>
+    <value>548, 156</value>
   </data>
   <data name="_scheduleOptionsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1270,7 +1282,7 @@
     <value>3, 160</value>
   </data>
   <data name="_scheduleOptionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 169</value>
+    <value>554, 175</value>
   </data>
   <data name="_scheduleOptionsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1357,10 +1369,10 @@
     <value>RightToLeft</value>
   </data>
   <data name="_buttonsFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 335</value>
+    <value>3, 341</value>
   </data>
   <data name="_buttonsFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 49</value>
+    <value>554, 43</value>
   </data>
   <data name="_buttonsFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1509,35 +1521,29 @@
   <data name="&gt;&gt;_badgererOptionsGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="_lockScreenCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="_badgererDisplayDropDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="_lockScreenCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="_badgererDisplayDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 3</value>
   </data>
-  <data name="_lockScreenCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 5</value>
+  <data name="_badgererDisplayDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
-  <data name="_lockScreenCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 17</value>
+  <data name="_badgererDisplayDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="_lockScreenCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Name" xml:space="preserve">
+    <value>_badgererDisplayDropDown</value>
   </data>
-  <data name="_lockScreenCheckBox.Text" xml:space="preserve">
-    <value>Lock the screen</value>
+  <data name="&gt;&gt;_badgererDisplayDropDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;_lockScreenCheckBox.Name" xml:space="preserve">
-    <value>_lockScreenCheckBox</value>
-  </data>
-  <data name="&gt;&gt;_lockScreenCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;_lockScreenCheckBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;_badgererDisplayDropDown.Parent" xml:space="preserve">
     <value>_badgererOptionsTableLayoutPanel</value>
   </data>
-  <data name="&gt;&gt;_lockScreenCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;_badgererDisplayDropDown.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="_badgererDisplayLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -1572,29 +1578,35 @@
   <data name="&gt;&gt;_badgererDisplayLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="_badgererDisplayDropDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="_lockScreenCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="_badgererDisplayDropDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 3</value>
+  <data name="_lockScreenCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="_badgererDisplayDropDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="_lockScreenCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 5</value>
   </data>
-  <data name="_badgererDisplayDropDown.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="_lockScreenCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 17</value>
   </data>
-  <data name="&gt;&gt;_badgererDisplayDropDown.Name" xml:space="preserve">
-    <value>_badgererDisplayDropDown</value>
+  <data name="_lockScreenCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;_badgererDisplayDropDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="_lockScreenCheckBox.Text" xml:space="preserve">
+    <value>Lock the screen</value>
   </data>
-  <data name="&gt;&gt;_badgererDisplayDropDown.Parent" xml:space="preserve">
+  <data name="&gt;&gt;_lockScreenCheckBox.Name" xml:space="preserve">
+    <value>_lockScreenCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_lockScreenCheckBox.Parent" xml:space="preserve">
     <value>_badgererOptionsTableLayoutPanel</value>
   </data>
-  <data name="&gt;&gt;_badgererDisplayDropDown.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;_lockScreenCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="_breakOptionsTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

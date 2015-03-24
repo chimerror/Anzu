@@ -154,7 +154,7 @@
     <comment>Shown when repeating for a certain duration.</comment>
   </data>
   <data name="RepeatAmountOnceText" xml:space="preserve">
-    <value>[D092C][!!_иóť âţ àłļ._!!]</value>
+    <value>[D092C][!!_ôйļŷ òήćę._!!]</value>
     <comment>Shown when repeating once.</comment>
   </data>
   <data name="RepeatAmountIndefinitelyText" xml:space="preserve">
@@ -177,32 +177,24 @@
     <value>[5A0F5][!!_áƒţéѓ ťħè ĥôµř áт: _!!!!!!]</value>
     <comment>Shown when starting at a time after the hour.</comment>
   </data>
-  <data name="StartingTimeAfterScreenUnlockText" xml:space="preserve">
-    <value>[61121][!!_àƒτèř ťнę şćŗęèη íş úиľòĉќêď._!!!!!!!!]</value>
-    <comment>Shown when starting when the screen is unlocked.</comment>
-  </data>
-  <data name="StartingTimeAfterScreenLockText" xml:space="preserve">
-    <value>[C78AF][!!_âƒťęř τнé şċŕèęή įś ľôčĸèð._!!!!!!!!]</value>
-    <comment>Shown when starting when the screen is locked.</comment>
-  </data>
   <data name="BreakDurationLabelText" xml:space="preserve">
-    <value>[28338][!!_Τâķé â вŗęãќ ƒõѓ_!!!!]</value>
+    <value>[28338][!!_Ţáĸê â ßřêáķ ƒòѓ_!!!!]</value>
     <comment>Shown before the break duration drop down.</comment>
   </data>
   <data name="BreakRepeatLabelText" xml:space="preserve">
-    <value>[28ADE][!!_ŗêþêãţ вřéàĸ(š)_!!!!]</value>
+    <value>[28ADE][!!_Кéèр Ţãķîήĝ Βѓèáĸś_!!!!!!]</value>
     <comment>Shown before the break repeat type drop down.</comment>
   </data>
   <data name="BreakIntervalLabelText" xml:space="preserve">
-    <value>[25857][!!_èνêŗў_!!]</value>
+    <value>[25857][!!_Τâќè à βŗęàĸ ÉνêŗУ_!!!!!!]</value>
     <comment>Shown before the break interval drop down.</comment>
   </data>
   <data name="BreakStartLabelText" xml:space="preserve">
-    <value>[38A8B][!!_šťâŕţîиġ_!!]</value>
+    <value>[38A8B][!!_Ŝтâŗť Ţâķíиġ Вřéàќŝ_!!!!!!]</value>
     <comment>Shown before the break starting time drop down.</comment>
   </data>
   <data name="BreakScheduleLabelText" xml:space="preserve">
-    <value>[DCC32][!!_ŝĉђęđúľé ъřéáк(ś)_!!!!!!]</value>
+    <value>[DCC32][!!_Şćћèðûłę Ьѓęáќś ţò Ĥáρρèη_!!!!!!!!]</value>
     <comment>Shown before the break schedule type drop down.</comment>
   </data>
   <data name="ScheduleNewBreakMenuName" xml:space="preserve">
@@ -218,7 +210,7 @@
     <comment>Shown when scheduling breaks that will end when the specific duration has passed.</comment>
   </data>
   <data name="BreakUntilLabelText" xml:space="preserve">
-    <value>[DA064][!!_ùиτîļ_!!]</value>
+    <value>[DA064][!!_Ќęéр Ŝčћéđùļîήġ Вѓèãќş Ùитįł_!!!!!!!!]</value>
     <comment>Shown on the label for the drop down that controls how long a schedule should continue.</comment>
   </data>
   <data name="BreakUntilIndefinitelyText" xml:space="preserve">
@@ -262,7 +254,15 @@
     <comment>Shown on the dialog to schedule a new break.</comment>
   </data>
   <data name="BadgererDisplayOptionsGroupBoxText" xml:space="preserve">
-    <value>[3733D][!!_Ŵħèй ţàķįηğ â ъŗêãķ:_!!!!!!]</value>
+    <value>[3733D][!!_Ŵћęй Ţáĸìйġ ã Βŕęâк:_!!!!!!]</value>
     <comment>Shown on the group box containing items concerning the display of the Badgerer program when taking a break.</comment>
+  </data>
+  <data name="BreakOptionsGroupBoxText" xml:space="preserve">
+    <value>[3A06B][!!_βŕęâќ Ĺéиĝтħ áйð Ìйтęŕνàļ:_!!!!!!!!]</value>
+    <comment>Shown on the group box containing the break length and interval settings.</comment>
+  </data>
+  <data name="ScheduleOptionsGroupBoxText" xml:space="preserve">
+    <value>[DAF13][!!_Šċħêðµĺìηĝ Õþтíõйş:_!!!!!!]</value>
+    <comment>Shown on the group box containing the scheduling options.</comment>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BadgererDisplayOptionsGroupBoxText" xml:space="preserve">
-    <value>When taking a break:</value>
+    <value>When Taking a Break:</value>
     <comment>Shown on the group box containing items concerning the display of the Badgerer program when taking a break.</comment>
   </data>
   <data name="BadgererWindowDisplayLabel" xml:space="preserve">
@@ -138,15 +138,19 @@
     <comment>Shown for the Badgerer unmaximized window mode.</comment>
   </data>
   <data name="BreakDurationLabelText" xml:space="preserve">
-    <value>Take a break for</value>
+    <value>Take a Break for</value>
     <comment>Shown before the break duration drop down.</comment>
   </data>
   <data name="BreakIntervalLabelText" xml:space="preserve">
-    <value>every</value>
+    <value>Take a Break Every</value>
     <comment>Shown before the break interval drop down.</comment>
   </data>
+  <data name="BreakOptionsGroupBoxText" xml:space="preserve">
+    <value>Break Length and Interval:</value>
+    <comment>Shown on the group box containing the break length and interval settings.</comment>
+  </data>
   <data name="BreakRepeatLabelText" xml:space="preserve">
-    <value>repeat break(s)</value>
+    <value>Keep Taking Breaks</value>
     <comment>Shown before the break repeat type drop down.</comment>
   </data>
   <data name="BreakScheduleDailyText" xml:space="preserve">
@@ -162,7 +166,7 @@
     <comment>Shown when scheduling indefinitely</comment>
   </data>
   <data name="BreakScheduleLabelText" xml:space="preserve">
-    <value>schedule break(s)</value>
+    <value>Schedule Breaks to Happen</value>
     <comment>Shown before the break schedule type drop down.</comment>
   </data>
   <data name="BreakScheduleOnCertainDaysOfTheWeekText" xml:space="preserve">
@@ -170,7 +174,7 @@
     <comment>Shown when scheduling on certain days of the week.</comment>
   </data>
   <data name="BreakStartLabelText" xml:space="preserve">
-    <value>starting</value>
+    <value>Start Taking Breaks</value>
     <comment>Shown before the break starting time drop down.</comment>
   </data>
   <data name="BreakUntilIndefinitelyText" xml:space="preserve">
@@ -178,7 +182,7 @@
     <comment>Shown when scheduling breaks that will run on specific days indefinitely.</comment>
   </data>
   <data name="BreakUntilLabelText" xml:space="preserve">
-    <value>until</value>
+    <value>Keep Scheduling Breaks Until</value>
     <comment>Shown on the label for the drop down that controls how long a schedule should continue.</comment>
   </data>
   <data name="BreakUntilSpecificDurationText" xml:space="preserve">
@@ -226,7 +230,7 @@
     <comment>Shown when repeating indefinitely.</comment>
   </data>
   <data name="RepeatAmountOnceText" xml:space="preserve">
-    <value>not at all.</value>
+    <value>only once.</value>
     <comment>Shown when repeating once.</comment>
   </data>
   <data name="RepeatAmountUntilCertainDurationText" xml:space="preserve">
@@ -245,13 +249,9 @@
     <value>Schedule New Break</value>
     <comment>Shown on the dialog to schedule a new break.</comment>
   </data>
-  <data name="StartingTimeAfterScreenLockText" xml:space="preserve">
-    <value>after the screen is locked.</value>
-    <comment>Shown when starting when the screen is locked.</comment>
-  </data>
-  <data name="StartingTimeAfterScreenUnlockText" xml:space="preserve">
-    <value>after the screen is unlocked.</value>
-    <comment>Shown when starting when the screen is unlocked.</comment>
+  <data name="ScheduleOptionsGroupBoxText" xml:space="preserve">
+    <value>Scheduling Options:</value>
+    <comment>Shown on the group box containing the scheduling options.</comment>
   </data>
   <data name="StartingTimeAfterTheHourText" xml:space="preserve">
     <value>after the hour at: </value>
