@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15083.0325" build-num="15083">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Honcho" product-version="0.0.15083.0546" build-num="15083">
     <header>
       <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
     </header>
@@ -26,6 +26,16 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[E65CF][!!_ùйmá×įмíźęđ йõŕмâľ ẁíиðôẅ_!!!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown for the Badgerer unmaximized window mode.</note>
           </trans-unit>
+        <trans-unit id="Resx/BreakDurationErrorTitle" translate="yes" xml:space="preserve">
+          <source>Invalid Break Interval</source>
+          <target state="new">Invalid Break Interval</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the title for the message box  displayed when the break interval is shorter than the duration.</note>
+        </trans-unit>
+        <trans-unit id="Resx/BreakDurationErrorMessage" translate="yes" xml:space="preserve">
+          <source>Cannot have breaks at intervals shorter than or equal to their duration.</source>
+          <target state="new">Cannot have breaks at intervals shorter than or equal to their duration.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when the break interval is shorter than the </note>
+        </trans-unit>
         <trans-unit id="Resx/BadgererWindowOverlayText" translate="yes" xml:space="preserve">
           <source>overlay window</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[D70B1][!!_ôνéѓĺâУ ẅíηðõẁ_!!!!]</target>
@@ -76,6 +86,16 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[D9A9C][!!_Ćãηćèł_!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown on the Cancel button.</note>
           </trans-unit>
+        <trans-unit id="Resx/EndTimeErrorTitle" translate="yes" xml:space="preserve">
+          <source>Invalid Break Schedule</source>
+          <target state="new">Invalid Break Schedule</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the title for the messge box when the break schedule end comes before the break schedule start.</note>
+        </trans-unit>
+        <trans-unit id="Resx/EndTimeErrorMessage" translate="yes" xml:space="preserve">
+          <source>Cannot have breaks scheduled to end before they start.</source>
+          <target state="new">Cannot have breaks scheduled to end before they start.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown when the break schedule end time is before the start time.</note>
+        </trans-unit>
         <trans-unit id="Resx/BreakUntilSpecificDurationText" translate="yes" xml:space="preserve">
           <source>a specific duration has passed:</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[D1FE5][!!_á šρéčįƒìċ đµѓáτíõи ħáş ρâššéď:_!!!!!!!!!!]</target>
@@ -136,6 +156,26 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[5F46C][!!_ûηтìļ â šþęčìƒíč ţíмę: _!!!!!!]</target>
           <note from="MultilingualBuild" annotates="source" priority="2">Shown when repeating until a specific time.</note>
           </trans-unit>
+        <trans-unit id="Resx/RepeatEndTimeErrorTitle" translate="yes" xml:space="preserve">
+          <source>Invalid Repetition End Time</source>
+          <target state="new">Invalid Repetition End Time</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the message box title when a specific repetition end time comes before the start time.</note>
+        </trans-unit>
+        <trans-unit id="Resx/RepeatEndTimeErrorMessage" translate="yes" xml:space="preserve">
+          <source>Cannot have specified repetition end time come before or at start time. If starting after the hour, make sure the repetition end time is sufficiently in the future from the first possible time that minute will be hit.</source>
+          <target state="new">Cannot have specified repetition end time come before or at start time. If starting after the hour, make sure the repetition end time is sufficiently in the future from the first possible time that minute will be hit.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the message box when a specific repetition end time comes before the start time.</note>
+        </trans-unit>
+        <trans-unit id="Resx/RepeatDurationErrorTitle" translate="yes" xml:space="preserve">
+          <source>Invalid Repetition Duration</source>
+          <target state="new">Invalid Repetition Duration</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the message box title when the repeat duration is shorter than the break interval.</note>
+        </trans-unit>
+        <trans-unit id="Resx/RepeatDurationErrorMessage" translate="yes" xml:space="preserve">
+          <source>Cannot have repeat duration be shorter than break interval. It will never repeat.</source>
+          <target state="new">Cannot have repeat duration be shorter than break interval. It will never repeat.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Shown on the message box when the repeat duration is shorter than the break interval.</note>
+        </trans-unit>
         <trans-unit id="Resx/ScheduleNewBreakMenuName" translate="yes" xml:space="preserve">
           <source>Schedule %%amp;new break...</source>
           <target state="translated">[2F77F][!!_Sčђèðµĺê %%amp;nèŵ ьѓéãк..._!!!!!!]</target>

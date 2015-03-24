@@ -137,6 +137,14 @@
     <value>unmaximized normal window</value>
     <comment>Shown for the Badgerer unmaximized window mode.</comment>
   </data>
+  <data name="BreakDurationErrorMessage" xml:space="preserve">
+    <value>Cannot have breaks at intervals shorter than or equal to their duration.</value>
+    <comment>Shown when the break interval is shorter than the </comment>
+  </data>
+  <data name="BreakDurationErrorTitle" xml:space="preserve">
+    <value>Invalid Break Interval</value>
+    <comment>Shown on the title for the message box  displayed when the break interval is shorter than the duration.</comment>
+  </data>
   <data name="BreakDurationLabelText" xml:space="preserve">
     <value>Take a Break for</value>
     <comment>Shown before the break duration drop down.</comment>
@@ -197,6 +205,14 @@
     <value>Cancel</value>
     <comment>Shown on the Cancel button.</comment>
   </data>
+  <data name="EndTimeErrorMessage" xml:space="preserve">
+    <value>Cannot have breaks scheduled to end before they start.</value>
+    <comment>Shown when the break schedule end time is before the start time.</comment>
+  </data>
+  <data name="EndTimeErrorTitle" xml:space="preserve">
+    <value>Invalid Break Schedule</value>
+    <comment>Shown on the title for the messge box when the break schedule end comes before the break schedule start.</comment>
+  </data>
   <data name="ExitMenuName" xml:space="preserve">
     <value>E&amp;xit</value>
     <comment>Shown on the Exit item of the menu.</comment>
@@ -240,6 +256,22 @@
   <data name="RepeatAmountUntilSpecificTimeText" xml:space="preserve">
     <value>until a specific time: </value>
     <comment>Shown when repeating until a specific time.</comment>
+  </data>
+  <data name="RepeatDurationErrorMessage" xml:space="preserve">
+    <value>Cannot have repeat duration be shorter than break interval. It will never repeat.</value>
+    <comment>Shown on the message box when the repeat duration is shorter than the break interval.</comment>
+  </data>
+  <data name="RepeatDurationErrorTitle" xml:space="preserve">
+    <value>Invalid Repetition Duration</value>
+    <comment>Shown on the message box title when the repeat duration is shorter than the break interval.</comment>
+  </data>
+  <data name="RepeatEndTimeErrorMessage" xml:space="preserve">
+    <value>Cannot have specified repetition end time come before or at start time. If starting after the hour, make sure the repetition end time is sufficiently in the future from the first possible time that minute will be hit.</value>
+    <comment>Shown on the message box when a specific repetition end time comes before the start time.</comment>
+  </data>
+  <data name="RepeatEndTimeErrorTitle" xml:space="preserve">
+    <value>Invalid Repetition End Time</value>
+    <comment>Shown on the message box title when a specific repetition end time comes before the start time.</comment>
   </data>
   <data name="ScheduleNewBreakMenuName" xml:space="preserve">
     <value>Schedule &amp;new break...</value>

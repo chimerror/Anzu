@@ -106,6 +106,24 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot have breaks at intervals shorter than or equal to their duration..
+        /// </summary>
+        internal static string BreakDurationErrorMessage {
+            get {
+                return ResourceManager.GetString("BreakDurationErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Break Interval.
+        /// </summary>
+        internal static string BreakDurationErrorTitle {
+            get {
+                return ResourceManager.GetString("BreakDurationErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Take a Break for.
         /// </summary>
         internal static string BreakDurationLabelText {
@@ -241,6 +259,24 @@ namespace Honcho.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot have breaks scheduled to end before they start..
+        /// </summary>
+        internal static string EndTimeErrorMessage {
+            get {
+                return ResourceManager.GetString("EndTimeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Break Schedule.
+        /// </summary>
+        internal static string EndTimeErrorTitle {
+            get {
+                return ResourceManager.GetString("EndTimeErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E&amp;xit.
         /// </summary>
         internal static string ExitMenuName {
@@ -337,6 +373,42 @@ namespace Honcho.Properties {
         internal static string RepeatAmountUntilSpecificTimeText {
             get {
                 return ResourceManager.GetString("RepeatAmountUntilSpecificTimeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot have repeat duration be shorter than break interval. It will never repeat..
+        /// </summary>
+        internal static string RepeatDurationErrorMessage {
+            get {
+                return ResourceManager.GetString("RepeatDurationErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Repetition Duration.
+        /// </summary>
+        internal static string RepeatDurationErrorTitle {
+            get {
+                return ResourceManager.GetString("RepeatDurationErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot have specified repetition end time come before or at start time. If starting after the hour, make sure the repetition end time is sufficiently in the future from the first possible time that minute will be hit..
+        /// </summary>
+        internal static string RepeatEndTimeErrorMessage {
+            get {
+                return ResourceManager.GetString("RepeatEndTimeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Repetition End Time.
+        /// </summary>
+        internal static string RepeatEndTimeErrorTitle {
+            get {
+                return ResourceManager.GetString("RepeatEndTimeErrorTitle", resourceCulture);
             }
         }
         

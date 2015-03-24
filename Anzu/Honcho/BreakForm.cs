@@ -263,9 +263,208 @@ namespace Honcho
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            // Daily/Every number of days -> Daily
-            // Weekly -> Weekly
-            // Otherwise -> Time
+            Trigger taskTrigger;
+            RepeatType repeatType = (RepeatType)_repeatDurationDropDown.SelectedValue;
+            ScheduleType scheduleType = (ScheduleType)_breakScheduleDropDown.SelectedValue;
+            if (repeatType == RepeatType.Indefinitely)
+            {
+                taskTrigger = new TimeTrigger();
+            }
+            else if (scheduleType == ScheduleType.Daily)
+            {
+                taskTrigger = new DailyTrigger(1);
+            }
+            else if (scheduleType == ScheduleType.EveryNumberOfDays)
+            {
+                short interval = Convert.ToInt16(_everyNumberOfDaysPicker.Value);
+                taskTrigger = new DailyTrigger(interval);
+            }
+            else if (scheduleType == ScheduleType.OnCertainDaysOfTheWeek)
+            {
+                taskTrigger = new WeeklyTrigger(GetSelectedDaysOfTheWeek(), 1);
+            }
+            else
+            {
+                Debug.Fail("Somehow ended up in unknown repeat-schedule set up. Setting trigger to time trigger");
+                taskTrigger = new TimeTrigger();
+            }
+
+            taskTrigger.Enabled = true;
+
+            StartingType startingType = (StartingType)_startingTypeDropDown.SelectedValue;
+            DateTime now = DateTime.Now;
+            int desiredStartingMinute = Convert.ToInt32(_startingTimeAfterHourPicker.Value);
+            switch (startingType)
+            {
+                case StartingType.SpecificTime:
+                    taskTrigger.StartBoundary = _startingSpecificTimePicker.Value;
+                    break;
+
+                case StartingType.AfterTheHour:
+                    int difference = desiredStartingMinute - now.Minute;
+                    if (difference < 0)
+                    {
+                        difference = 60 + difference;
+                    }
+                    taskTrigger.StartBoundary = now.AddMinutes(difference);
+                    break;
+
+                case StartingType.Now:
+                    taskTrigger.StartBoundary = now;
+                    break;
+
+                default:
+                    Debug.Fail("Somehow ended up in unknown starting setup. Setting start to now.");
+                    taskTrigger.StartBoundary = now;
+                    break;
+            }
+
+            UntilType untilType = (UntilType)_breakUntilDropDown.SelectedValue;
+            DateTime endTime = DateTime.MaxValue;
+            if (repeatType != RepeatType.Indefinitely && untilType != UntilType.Idefinitely)
+            {
+                switch (untilType)
+                {
+                    case UntilType.SpecificTime:
+                        endTime = _breakUntilSpecificTimePicker.Value;
+                        break;
+
+                    case UntilType.SpecificDuration:
+                        endTime = taskTrigger.StartBoundary.Add(_breakUntilSpecificDurationPicker.Value);
+                        break;
+
+                    default:
+                        Debug.Fail("Somehow ended up in unknown ending setup. Setting end to max value");
+                        endTime = DateTime.MaxValue;
+                        break;
+                }
+            }
+
+            if (endTime < taskTrigger.StartBoundary)
+            {
+                MessageBox.Show(Properties.Resources.EndTimeErrorMessage, Properties.Resources.EndTimeErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (endTime != DateTime.MaxValue)
+            {
+                taskTrigger.EndBoundary = endTime;
+            }
+
+            TimeSpan breakDuration = _breakDurationPicker.Value;
+            taskTrigger.ExecutionTimeLimit = breakDuration;
+
+            TimeSpan breakInterval = _breakIntervalPicker.Value;
+            if (breakInterval < breakDuration)
+            {
+                MessageBox.Show(Properties.Resources.BreakDurationErrorMessage, Properties.Resources.BreakDurationErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            TimeSpan repeatDuration = TimeSpan.Zero;
+            DateTime specificRepeatEndTime = _repeatSpecificTimePicker.Value;
+            if (repeatType == RepeatType.UntilSpecificTime && taskTrigger.StartBoundary >= specificRepeatEndTime)
+            {
+                MessageBox.Show(Properties.Resources.RepeatEndTimeErrorMessage, Properties.Resources.RepeatEndTimeErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            switch (repeatType)
+            {
+                case RepeatType.Indefinitely:
+                    repeatDuration = TimeSpan.Zero;
+                    break;
+
+                case RepeatType.UntilSpecificTime:
+                    repeatDuration = specificRepeatEndTime - taskTrigger.StartBoundary;
+                    break;
+
+                case RepeatType.UntilCertainDuration:
+                    repeatDuration = _repeatCertainDurationPicker.Value;
+                    break;
+
+                case RepeatType.Once:
+                    repeatDuration = breakInterval;
+                    break;
+
+                case RepeatType.CertainNumberOfTimes:
+                    int numberOfTimes = Convert.ToInt32(_repeatSpecificNumberOfTimesPicker.Value);
+                    repeatDuration = new TimeSpan(breakInterval.Ticks * numberOfTimes);
+                    break;
+
+                default:
+                    Debug.Fail("Somehow ended up in unknown repeat type. Setting repetition to indefinitely.");
+                    repeatDuration = TimeSpan.Zero;
+                    break;
+            }
+
+            if (repeatDuration != TimeSpan.Zero && repeatDuration < breakInterval)
+            {
+                MessageBox.Show(Properties.Resources.RepeatDurationErrorMessage, Properties.Resources.RepeatDurationErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            taskTrigger.SetRepetition(breakInterval, repeatDuration, false);
+
+            var task = _taskService.NewTask();
+            task.Triggers.Add(taskTrigger);
+
+            task.Actions.Add(new ExecAction("badgerer.exe"));
+
+            string friendlyName = string.IsNullOrWhiteSpace(_friendlyNameTextBox.Text) ? null : _friendlyNameTextBox.Text;
+            var anzuTaskData = new AnzuTaskData(friendlyName);
+            task.Data = anzuTaskData.Serialize();
+
+            task.Settings.Enabled = true;
+            task.Settings.ExecutionTimeLimit = breakDuration;
+            task.Settings.StopIfGoingOnBatteries = false;
+            task.Settings.WakeToRun = false;
+            task.Settings.MultipleInstances = TaskInstancesPolicy.IgnoreNew;
+            task.Principal.LogonType = TaskLogonType.InteractiveToken;
+
+            _taskFolder.RegisterTaskDefinition(Guid.NewGuid().ToString(), task, TaskCreation.Create, Environment.UserName);
+
+            Close();
+        }
+
+        private DaysOfTheWeek GetSelectedDaysOfTheWeek()
+        {
+            DaysOfTheWeek result = (DaysOfTheWeek)0;
+
+            if (_checkBoxSunday.Checked)
+            {
+                result |= DayOfWeek.Sunday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxMonday.Checked)
+            {
+                result |= DayOfWeek.Monday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxTuesday.Checked)
+            {
+                result |= DayOfWeek.Tuesday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxWednesday.Checked)
+            {
+                result |= DayOfWeek.Wednesday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxThursday.Checked)
+            {
+                result |= DayOfWeek.Thursday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxFriday.Checked)
+            {
+                result |= DayOfWeek.Friday.ToTaskSchedulerDay();
+            }
+
+            if (_checkBoxSaturday.Checked)
+            {
+                result |= DayOfWeek.Saturday.ToTaskSchedulerDay();
+            }
+
+            return result;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
