@@ -11,7 +11,7 @@
     <AssemblyName>Badgerer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AssemblyVersion>0.0.15088.0339</AssemblyVersion>
+    <AssemblyVersion>0.0.15088.0424</AssemblyVersion>
     <SupportedCultures>qps-ploc</SupportedCultures>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
